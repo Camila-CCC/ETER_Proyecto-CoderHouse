@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="../estilos/styles.css">
+
+</head>
+
+
+<body>
+
+    <!--Header-->
+    <header>
+
+        <!--Logo-->
+        <a href="../index.html">
+            <img class="logo" src="../recursos_graficos/logo.png" alt="Logo de ETER">
+        </a>
+
+        <!--Navegacion-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./merch_oficial.html">Merch Oficial</a></li>
+                <li><a href="./sobre_eter.html">Sobre ETER</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <h1>Contacto</h1>
+
+        <!--Contacto profesional------------------------------------------------------>
+
+        <section class="contacto_profesional">
+
+            <h2>Por contacto profesional: </h2>
+            <p><strong>Comunicate por mail</strong> eter_musica@gmail.com</p>
+
+        </section>
+
+
+        <!--Formulario para unirse------------------------------------------------------>
+        <section class="formulario_para_unirse">
+            <h2>¡Unite a nuestra banda!</h2>
+            <form action="/submit" method="post">
+
+                <!--Datos personales-->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+
+                <label for="telefono">Número de WhatsApp:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ejemplo: 15 1234-5678" required>
+
+                <label for="instagram">Instagram:</label>
+                <input type="text" id="instagram" name="instagram" placeholder="@usuario o link al perfil">
+
+                <!--Datos musicales-->
+                <div class="lista_instrumentos">
+                    <label for="instrumentos">Qué instrumentos tocás?</label>
+
+                    <input type="checkbox" name="seleccion_instrumentos" id="voz">
+                    <label for="voz">Voz/Coros</label>
+
+                    <input type="checkbox" name="seleccion_instrumentos" id="guitarra">
+                    <label for="guitarra">Guitarra</label>
+
+                    <input type="checkbox" name="seleccion_instrumentos" id="bajo">
+                    <label for="bajo">Bajo</label>
+
+                    <input type="checkbox" name="seleccion_instrumentos" id="bateria">
+                    <label for="bateria">Batería</label>
+
+                    <input type="checkbox" name="seleccion_instrumentos" id="piano">
+                    <label for="piano">Piano/Teclado</label>
+
+                    <input type="checkbox" name="seleccion_instrumentos" id="otro">
+                    <label for="otro">Otro</label>
+
+                </div>
+
+
+                <div>
+                    <label for="experiencia">Estuviste en alguna banda anteriormente?</label>
+
+                    <input type="radio" name="experiencia" id="si1">
+                    <label for="si1">Sí! Mucho tiempo.</label>
+
+                    <input type="radio" name="experiencia" id="si2">
+                    <label for="si2">Sí! Poco tiempo.</label>
+
+                    <input type="radio" name="experiencia" id="no">
+                    <label for="no">Aún no!</label>
+                </div>
+
+
+                <div>
+                    <label for="mensaje">Contanos un poco más sobre vos:</label>
+                    <textarea name="mensaje" id="mensaje"
+                        placeholder="Referencias, bandas anteriores, ganas, estilo..."></textarea>
+                </div>
+
+                <!--Enviar-->
+                <input type="submit" value="Enviar"></input>
+            </form>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <!--Footer-->
+    <footer>
+        <section>
+            <p class="footer">© 2025, Eter</p>
+        </section>
+
+        <section>
+            <a href="https://www.instagram.com/eter_oficial_?igsh=MmtpaDF5YTk5b2Z0&utm_source=qr" target="_blank">
+                <img src="../recursos_graficos/ig.png" alt="Logo de instagram">
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100093523778861&locale=th_TH" target="_blank">
+                <img src="../recursos_graficos/fb.png" alt="Logo de facebook">
+            </a>
+
+            <a href="https://open.spotify.com/intl-es/artist/1zNyabRbsAXrlxkHOWHmf2?si=pMTaLqoiQcmLwtN1EsEfUg"
+                target="_blank">
+                <img src="../recursos_graficos/sf.png" alt="Logo de Spotify">
+            </a>
+
+            <a href="https://www.tiktok.com/@eteroficial" target="_blank">
+                <img src="../recursos_graficos/tt.png" alt="Logo de Tik Tok">
+            </a>
+
+            <a href="https://www.youtube.com/@Eter_oficial" target="_blank">
+                <img src="../recursos_graficos/yt.png" alt="Logo de Youtube">
+            </a>
+
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

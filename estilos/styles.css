@@ -1,0 +1,203 @@
+/* Notas----------------------------------------------------------
+
+    font-family: "Oswald", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+
+    1rem = 10px
+
+ ---------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+:root {
+    /*Paleta de colores*/
+    --bordo: #8E1616;
+    --cremita: #E9CA9B;
+    --negro: #1F1F1F;
+    --blanco: #FBFBFB;
+    --gris: #e3e3e3b5;
+}
+
+/* Textos en general-------------------------------------------*/
+
+body {
+    font-size: 2rem;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2.6rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 2.2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+}
+
+main a {
+    color: var(--bordo);
+}
+
+.bordo {
+    color: var(--bordo);
+}
+
+/* Header ------------------------------------------------------*/
+
+header {
+    /*Estructura*/
+    background-color: var(--negro);
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    /*Contenido: [a] & [nav]*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    padding: 0px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Footer -------------------------------------------------------*/
+
+footer {
+    /*Estructura*/
+    background-color: var(--negro);
+    width: 100%;
+    height: 60px;
+    /*Contenido: [section] & [section .iconos_redes]*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    padding: 0px 20px 5px 20px;
+}
+
+footer img {
+    height: 20px;
+    padding: 0px 5px;
+}
+
+.iconos_redes {
+    margin-right: 15px;
+}
+
+
+/* Index/Home -------------------------------------------------*/
+
+
+.home_banner_principal {
+    width: 100%;
+    margin: 0px;
+}
+
+.home_intro {
+    /*Estructura*/
+    width: 100%;
+    height: 25vh;
+    background-color: var(--blanco);
+    /*Contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boton {
+    background-color: var(--bordo);
+    color: var(--blanco);
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 15px;
+    border: solid #700c0c 2px;
+}
+
+.home_fechas {
+    /*Estructura*/
+    width: 100%;
+    height: 28vh;
+    background-color: var(--gris);
+    padding-left: 30px;
+    /*Contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
+
+
+
+
+
+
+
+/* Página Merch -------------------------------------------------*/
+
+.producto_imagen {
+    width: 25%;
+
+}
+
+
+/* Página Sobre Nosotros ----------------------------------------*/
+
+.foto_integrantes {
+    width: 60%;
+}
