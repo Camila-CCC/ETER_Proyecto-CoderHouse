@@ -174,12 +174,13 @@ footer img {
     text-decoration: none;
     border-radius: 6px;
     margin: 15px 0px;
-    border: solid #700c0c 2px;
+    border: solid #832727 2px;
     display: inline-block;
 }
 
 .boton:hover {
-    background-color: rgb(154, 11, 11);
+    background-color: #9f0c0c;
+    border: solid #9f0c0c 2px;
 }
 
 
@@ -194,7 +195,7 @@ footer img {
         "imagen texto2"
         "imagen botones";
     grid-template-columns: 40% 50%;
-    grid-template-rows: 70px 70px 60px 120px 60px;
+    grid-template-rows: 70px 60px 70px 120px 60px;
     justify-content: center;
     justify-items: start;
     align-items: start;
@@ -217,8 +218,6 @@ footer img {
     object-fit: contain;
     object-position: left;
 }
-
-
 
 .ep_titulo {
     grid-area: titulo;
@@ -248,12 +247,10 @@ footer img {
 
 .ep_boton_sf {
     margin: 5px 15px 0px 0px;
-
 }
 
 .ep_boton_yt {
-        margin: 5px 0px 0px 0px;
-
+    margin: 5px 0px 0px 0px;
 }
 
 /*Fechas*/
@@ -261,20 +258,23 @@ footer img {
 .home_fechas {
     /*Estructura*/
     width: 100%;
+    height: auto;
     background-color: var(--gris);
-    padding: 4% 5%;
+    padding: 4% 8%;
     /*Contenido*/
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 .fechas_contenido {
     width: 40%;
-    padding: 4% 2% 4% 11%;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-right: 2%;
 }
 
 .fechas_imagen {
@@ -283,7 +283,6 @@ footer img {
 
 .fechas_imagen_detalle {
     width: 100%;
-    height: 100%;
     object-fit: contain;
 }
 
@@ -306,11 +305,26 @@ footer img {
     color: var(--blanco);
 }
 
+
 /*Busqueda de nuevos integrantes*/
 
 .home_busqueda {
     background-color: var(--gris);
-    padding: 4% 14%;
+    padding: 4% 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.busqueda_contenido {
+    width: 60%;
+    padding-right: 15%;
+}
+
+.busqueda_boton {
+    width: 30%;
 }
 
 .disclaimer {
@@ -321,7 +335,11 @@ footer img {
 
 
 
-/* Página Merch -------------------------------------------------*/
+
+
+
+
+/* Página Merch --------------------------------------------------------------------*/
 
 .titulo_merch {
     display: flex;
@@ -454,21 +472,50 @@ footer img {
     /*Fechas*/
     .home_fechas {
         flex-direction: column-reverse;
+        justify-content: center;
         align-items: center;
         padding: 5% 8%;
     }
 
     .fechas_contenido {
         width: 100%;
+        height: 200px;
+        padding: 0%;
     }
 
     .fechas_imagen {
         width: 100%;
     }
 
+    .fechas_imagen_detalle {
+        width: 100%;
+        object-fit: contain;
+    }
+
+
     /*Merch*/
     .home_merch {
         padding: 5% 8%;
+    }
+
+
+    /*Busqueda de nuevos integrantes*/
+    .home_busqueda {
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding: 10% 8%;
+
+    }
+
+    .busqueda_contenido {
+        width: 100%;
+        padding-right: 0%;
+    }
+
+    .busqueda_boton {
+        width: 100%;
+        padding-top: 2%;
     }
 
 }
