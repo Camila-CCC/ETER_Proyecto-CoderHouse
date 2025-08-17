@@ -47,33 +47,34 @@
     <!--Main------------------------------------------------------------>
     <main>
 
-        <!--Carrusel principal (Bootstrap)--> 
+        <!--Carrusel principal (Bootstrap)-->
 
         <div id="carrusel_principal" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1">
                 </button>
-                <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="1"
-                    aria-label="Slide 2">
+                <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="1" aria-label="Slide 2">
                 </button>
-                <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="2"
-                    aria-label="Slide 3">
+                <button type="button" data-bs-target="#carrusel_principal" data-bs-slide-to="2" aria-label="Slide 3">
                 </button>
             </div>
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./recursos_graficos/banner_principal.png" class="d-block w-100" alt="Foto de la banda en el bosque">
+                    <img src="./recursos_graficos/banner_principal.png" class="d-block w-100"
+                        alt="Foto de la banda en el bosque">
                 </div>
                 <div class="carousel-item">
-                    <img src="./recursos_graficos/banner_principal2.png" class="d-block w-100" alt="Foto de la banda tocando en vivo">
+                    <img src="./recursos_graficos/banner_principal2.png" class="d-block w-100"
+                        alt="Foto de la banda tocando en vivo">
                 </div>
                 <div class="carousel-item">
-                    <img src="./recursos_graficos/banner_principal3.png" class="d-block w-100" alt="Foto de Leo y Cami, miembros de la banda">
+                    <img src="./recursos_graficos/banner_principal3.png" class="d-block w-100"
+                        alt="Foto de Leo y Cami, miembros de la banda">
                 </div>
             </div>
-            
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carrusel_principal"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,26 +89,54 @@
         </div>
 
 
-
-
-        <!--Intro-->
-
-        <section class="home_intro">
+        <!--Presentación-->
+        <section class="home_presentacion">
             <h1>Hola! Nosotros somos ETER.</h1>
-            <p>Una banda de rock alternativo fundado en 2023 por Leonel y Camila.</p>
-
+            <p class="centrado">Una banda de rock alternativo fundado en 2023 por Leonel y Camila.</p>
             <a href="./pages/sobre_eter.html" class="boton">Conocé más sobre la banda!</a>
         </section>
 
-        <section class="home_fechas">
-            <h2>Próximas fechas</h2>
-            <ul>
-                <li><strong class="bordo">04/08/2025</strong> en Yuppys!</li>
-                <li><strong class="bordo">20/09/2025</strong> en Anden 18!</li>
-            </ul>
-            <p>Las entradas son gratuitas, solo tenés que reservar tu lugar al 15-1234-5678.</p>
+
+        <!--Nuevo EP (se utilizó grid)-->
+        <section class="home_ep">
+            <img class="ep_imagen" src="/recursos_graficos/portada_avanzar.png" alt="Portada del nuevo EP avanzar">
+            <h2 class="ep_titulo">Escuchá nuestro nuevo EP!</h2>
+            <h3 class="ep_subtitulo"><strong><em>AVANZAR</em></strong> es nuestro primer EP.</h3>
+            <p class="ep_texto1">Cada canción representa un capítulo en una historia de <strong
+                    class="bordo">superación.</strong></p>
+            <p class="ep_texto2">Abordamos temas sensibles como la violencia, los ataques de pánico y la depresión, pero
+                sobre todo,
+                hablamos de lo más importante: <strong>aprender a soltar y dejar atrás lo que nos duele.</strong>
+            </p>
+            <div class="botones">
+                <a class="boton ep_boton_yt" href="https://www.youtube.com/@Eter_oficial" target="_blank"
+                    role="button">Ver en Youtube</a>
+                <a class="boton" href="https://www.youtube.com/@Eter_oficial" target="_blank" role="button">Escuchar en
+                    Spotify</a>
+            </div>
         </section>
 
+
+        <!-- Fechas
+        <section class="home_fechas">
+            <div class="fechas_contenido">
+                <h2>Próximas fechas</h2>
+                <ul>
+                    <li><strong class="bordo">04/08/2025</strong> en Yuppys!</li>
+                    <li><strong class="bordo">20/09/2025</strong> en Anden 18!</li>
+                </ul>
+                <p>Las entradas son gratuitas, solo tenés que reservar tu lugar al 15-1234-5678.</p>
+            </div>
+
+            <div class="fechas_imagen">
+                <img src="./recursos_graficos/proximas_fechas.png" alt="Foto de la banda tocando en vivo" class="fechas_imagen_detalle">
+            </div>
+
+        </section> -->
+
+
+
+        <!--merch-->
         <section>
             <h2>Merch oficial</h2>
             <p>Te invitamos a ver nuestros prooductos!</p>
