@@ -417,24 +417,34 @@ footer img {
 
 /* Página Merch --------------------------------------------------------------------*/
 
+/*Titulo*/
+
 .titulo_merch {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 0%;
+    width: 100%;
+    padding: 5% 10%;
+    text-align: center;
 }
 
-.grilla_de_productos {
-    display: flex;
-    justify-content: center;
+/*Grilla de productos*/
 
+.grilla_de_productos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 1% 15%;
+    align-items: center;
 }
 
 .card_de_producto {
     background-color: var(--blanco);
     border-radius: 6px;
-    margin: 10px;
-    padding: 10px;
+    margin: 15px;
+    padding: 20px;
     box-shadow: 1px 1px 10px -1px rgba(130, 130, 130, 0.79);
     -webkit-box-shadow: 1px 2px 18px -1px rgba(105, 105, 105, 0.79);
     -moz-box-shadow: 1px 2px 18px -1px rgba(107, 107, 107, 0.79);
@@ -450,19 +460,45 @@ footer img {
     font-size: 2rem;
 }
 
-.card-text {
-    font-size: 1.8rem;
-    padding-top: 5px;
-}
-
 .btn {
     background-color: var(--bordo);
     font-size: 1.5rem;
     font-family: "Roboto Condensed", sans-serif;
 }
 
+.btn:hover {
+    background-color: #9f0c0c;
+}
 
 
+/*Información*/
+
+.merch_informacion {
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.informacion {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_imag {
+    margin: 15px;
+}
+
+.info_p {
+    padding: 0px;
+    margin: 0px;
+}
 
 
 /* Página Sobre Nosotros ----------------------------------------*/
@@ -484,6 +520,7 @@ footer img {
 
 @media (max-width: 768px) {
 
+    /*General*/
     h1 {
         text-align: center;
     }
@@ -518,10 +555,8 @@ footer img {
         display: none;
     }
 
-    /*Footer*/
 
-
-
+    /*Página index/HOME ----------*/
     /*Presentacion*/
     .home_presentacion {
         padding: 5% 8%;
@@ -530,6 +565,7 @@ footer img {
     .boton {
         margin: 5px 0px;
     }
+
 
     /*Nuevo EP*/
     .home_ep {
@@ -548,6 +584,7 @@ footer img {
     .ep_imagen {
         padding: 0px;
     }
+
 
     /*Fechas*/
     .home_fechas {
@@ -597,6 +634,7 @@ footer img {
         padding-top: 2%;
     }
 
+
     /*Plataformas y redes*/
 
     .plataformas_yt {
@@ -624,6 +662,25 @@ footer img {
         height: 320px;
     }
 
+    /*Página MERCH ----------*/
+    /*Grilla de productos*/
+    .grilla_de_productos {
+        grid-template-columns: 1fr;
+        padding: 2% 12%;
+    }
+
+    /*Información*/
+
+    .merch_informacion {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+.informacion {
+    width: 100%;
+}
 
 
 
