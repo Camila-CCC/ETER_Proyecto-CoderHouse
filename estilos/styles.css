@@ -501,12 +501,115 @@ footer img {
 }
 
 
-/* Página Sobre Nosotros ----------------------------------------*/
+/* Página Sobre Nosotros --------------------------------------------------------------------*/
 
-.foto_integrantes {
-    width: 60%;
+/*Titulo*/
+
+.nosotros_titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 5%;
 }
 
+.nosotros_banner {
+    width: 100%;
+}
+
+
+/*Card de integrantes*/
+
+.integrantes_titulo {
+    padding: 4% 10% 0% 10%;
+    text-align: left;
+}
+
+.integrantes_fotos {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    margin: 15px 0px;
+    border-radius: 3px;
+}
+
+.integrantes_icono {
+    width: 25px;
+    height: auto;
+    object-fit: contain;
+}
+
+.grilla_de_integrantes {
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 2% 10%;
+}
+
+.card_integrante {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2% 5% 2% 0%;
+}
+
+.integrantes_contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 10% 5% 2%;
+}
+
+.integrantes_p {
+    font-size: 1.8rem;
+}
+
+
+/*Historia*/
+
+.historia_titulo {
+    background-color: var(--gris);
+    padding: 4% 10% 0% 10%;
+    text-align: left;
+    margin: 0px;
+}
+
+.nosotros_historia {
+    width: 100%;
+    height: 400px;
+    padding: 4% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--gris);
+}
+
+.contenido_integrantes {
+    width: 50%;
+    height: 300px;
+    padding: 2% 6% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foto_integrantes {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto_integrantes_detalle {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
 
 
@@ -672,15 +775,76 @@ footer img {
     /*Información*/
 
     .merch_informacion {
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+    }
+
+    .informacion {
+        width: 100%;
+    }
+
+    /*Página Sobre Nosotros ----------*/
+    /*Grilla de integrantes*/
+
+    .integrantes_titulo {
+        text-align: center;
+        padding: 5% 10% 0% 10%;
+
+    }
+
+    .grilla_de_integrantes {
+        width: 100%;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .card_integrante {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0% 0% 0% 0%;
+    }
+
+    .integrantes_fotos {
+        width: 100%;
+        object-fit: cover;
+        margin: 0px 0px;
+    }
+
+    .integrantes_contenido {
+        padding: 0% 0% 6% 0%;
+        flex-direction: column;
+    }
+
+    .integrantes_p {
+        font-size: 1.5rem;
+    }
+
+
+.historia_titulo {
+    padding: 7% 10% 0% 10%;
+    text-align: left;
+    margin: 0px;
 }
 
-.informacion {
+    .nosotros_historia {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+            height: auto;
+
+    }
+
+.contenido_integrantes {
     width: 100%;
 }
+
+.foto_integrantes {
+    width: 100%;
+}
+
 
 
 
