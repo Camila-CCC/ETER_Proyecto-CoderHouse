@@ -334,6 +334,80 @@ footer img {
 }
 
 
+/*Plataformas y redes*/
+
+.home_plataformas {
+    background-color: var(--blanco);
+    width: 100%;
+}
+
+.home_plataformas_contenido {
+    width: 100%;
+    padding: 4% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.plataformas_titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.plataformas_yt {
+    width: 90%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 4% 0%;
+}
+
+.yt_iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.boton_plataformas {
+    font-size: 1.5rem;
+    background-color: var(--negro);
+    border: #1F1F1F solid 2px;
+}
+
+.plataformas_3{  
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: flex-end;
+}
+
+
+.plataformas_sf{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-right: 4%;     
+}
+
+.plataformas_2{
+    width: 40%;
+    height: 352px; /*Igual que el iframe de sf*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
 
 
 
