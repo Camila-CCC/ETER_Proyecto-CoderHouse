@@ -933,8 +933,7 @@ input[type="submit"]:hover {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        height: auto;
-
+        height: 100%;
     }
 
     .contenido_integrantes {
@@ -948,7 +947,7 @@ input[type="submit"]:hover {
 
     .colum_reverse {
         flex-direction: column;
-
+        padding-bottom: 20%;
     }
 
     /*Formulario de contacto*/
