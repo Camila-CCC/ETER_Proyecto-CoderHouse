@@ -580,7 +580,7 @@ footer img {
 .nosotros_historia {
     width: 100%;
     height: 400px;
-    padding: 4% 10%;
+    padding: 2% 10% 4% 10%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -610,6 +610,32 @@ footer img {
     height: auto;
     object-fit: contain;
 }
+
+
+/*Newsletter*/
+
+.nosotros_newsletter {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4% 10%;
+    text-align: center;
+}
+
+#mail {
+    width: 40%;
+    height: auto;
+    margin: 2% 10% 2% 10%;
+}
+
+
+
+
+
+
 
 
 
@@ -823,29 +849,33 @@ footer img {
     }
 
 
-.historia_titulo {
-    padding: 7% 10% 0% 10%;
-    text-align: left;
-    margin: 0px;
-}
+    .historia_titulo {
+        padding: 7% 10% 0% 10%;
+        text-align: left;
+        margin: 0px;
+    }
 
     .nosotros_historia {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
-            height: auto;
+        height: auto;
 
     }
 
-.contenido_integrantes {
-    width: 100%;
-}
+    .contenido_integrantes {
+        width: 100%;
+        padding-right: 0px;
+    }
 
-.foto_integrantes {
-    width: 100%;
-}
+    .foto_integrantes {
+        width: 100%;
+    }
 
+    .colum_reverse {
+        flex-direction: column;
 
+    }
 
 
 
