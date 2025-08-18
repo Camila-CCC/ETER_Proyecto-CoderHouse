@@ -49,21 +49,23 @@
     <main>
 
 
-        <h1>Contacto</h1>
+        <h1 class="contacto_titulo">Contacto</h1>
 
         <!--Contacto profesional------------------------------------------------------>
 
         <section class="contacto_profesional">
 
             <h2>Por contacto profesional: </h2>
-            <p><strong>Comunicate por mail</strong> eter_musica@gmail.com</p>
+            <p>Si te interesa contratarnos, armar una colaboración o tenés alguna propuesta, escribinos a:</p>
+            <p><strong> 📧 correo.eter@gmail.com</strong></p>
+            <p>También estamos disponibles para consultas a través de nuestras redes sociales!</p>
 
         </section>
 
 
         <!--Formulario para unirse------------------------------------------------------>
         <section class="formulario_para_unirse" id="formulario_para_unirse">
-            <h2>¡Unite a nuestra banda!</h2>
+            <h2 class="titulo_form">¡Unite a nuestra banda!</h2>
             <form action="/submit" method="post">
 
                 <!--Datos personales-->
@@ -81,40 +83,46 @@
 
                 <!--Datos musicales-->
                 <div class="lista_instrumentos">
-                    <label for="instrumentos">Qué instrumentos tocás?</label>
+                    <div>
+                        <label for="instrumentos">Qué instrumentos tocás?</label>
+                    </div>
+                    <div id="forms_pares1">
+                        <input type="checkbox" name="seleccion_instrumentos" id="voz">
+                        <label for="voz">Voz/Coros</label>
 
-                    <input type="checkbox" name="seleccion_instrumentos" id="voz">
-                    <label for="voz">Voz/Coros</label>
+                        <input type="checkbox" name="seleccion_instrumentos" id="guitarra">
+                        <label for="guitarra">Guitarra</label>
 
-                    <input type="checkbox" name="seleccion_instrumentos" id="guitarra">
-                    <label for="guitarra">Guitarra</label>
+                        <input type="checkbox" name="seleccion_instrumentos" id="bajo">
+                        <label for="bajo">Bajo</label>
 
-                    <input type="checkbox" name="seleccion_instrumentos" id="bajo">
-                    <label for="bajo">Bajo</label>
+                        <input type="checkbox" name="seleccion_instrumentos" id="bateria">
+                        <label for="bateria">Batería</label>
 
-                    <input type="checkbox" name="seleccion_instrumentos" id="bateria">
-                    <label for="bateria">Batería</label>
+                        <input type="checkbox" name="seleccion_instrumentos" id="piano">
+                        <label for="piano">Piano/Teclado</label>
 
-                    <input type="checkbox" name="seleccion_instrumentos" id="piano">
-                    <label for="piano">Piano/Teclado</label>
-
-                    <input type="checkbox" name="seleccion_instrumentos" id="otro">
-                    <label for="otro">Otro</label>
-
+                        <input type="checkbox" name="seleccion_instrumentos" id="otro">
+                        <label for="otro">Otro</label>
+                    </div>
                 </div>
 
 
                 <div>
-                    <label for="experiencia">Estuviste en alguna banda anteriormente?</label>
 
-                    <input type="radio" name="experiencia" id="si1">
-                    <label for="si1">Sí! Mucho tiempo.</label>
+                    <div>
+                        <label for="experiencia">Estuviste en alguna banda anteriormente?</label>
+                    </div>
+                    <div id="forms_pares2">
+                        <input type="radio" name="experiencia" id="si1">
+                        <label for="si1">Sí! Mucho tiempo.</label>
 
-                    <input type="radio" name="experiencia" id="si2">
-                    <label for="si2">Sí! Poco tiempo.</label>
+                        <input type="radio" name="experiencia" id="si2">
+                        <label for="si2">Sí! Poco tiempo.</label>
 
-                    <input type="radio" name="experiencia" id="no">
-                    <label for="no">Aún no!</label>
+                        <input type="radio" name="experiencia" id="no">
+                        <label for="no">Aún no!</label>
+                    </div>
                 </div>
 
 

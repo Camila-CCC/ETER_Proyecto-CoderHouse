@@ -631,14 +631,88 @@ footer img {
     margin: 2% 10% 2% 10%;
 }
 
+/* Página de Contacto --------------------------------------------------------------------*/
 
+/*Contacto profesional*/
+.contacto_titulo {
+    padding: 4% 10%;
+}
 
+.contacto_profesional {
+    padding: 2% 10%;
+    background: var(--blanco);
+    height: auto;
+    width: 100%;
+}
 
+/*Formulario*/
 
+.formulario_para_unirse {
+    width: 100%;
+    height: auto;
+    padding: 2% 10%;
+}
 
+.formulario_para_unirse h2 {
+    padding: 2% 0%;
+}
 
+.formulario_para_unirse form {
+    background: var(--gris);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 6px;
+}
 
+.formulario_para_unirse label {
+    margin-bottom: 0px;
+}
 
+.formulario_para_unirse input {
+    padding: 10px;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 6px;
+    background: var(--blanco);
+    color: var(--negro);
+}
+
+.formulario_para_unirse textarea {
+    padding: 10px;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 6px;
+    background: var(--blanco);
+    color: var(--negro);
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+}
+
+.formulario_para_unirse div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Botón */
+input[type="submit"] {
+    background: var(--bordo);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 12px;
+    display: inline-block;
+    border: solid #832727 2px;
+}
+
+input[type="submit"]:hover {
+    background-color: #9f0c0c;
+    border: solid #9f0c0c 2px;
+}
 
 
 
@@ -877,6 +951,42 @@ footer img {
 
     }
 
+    /*Formulario de contacto*/
+    .formulario_para_unirse div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulario_para_unirse input {
+        width: 100%;
+    }
+
+    .formulario_para_unirse textarea {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
+
+    #forms_pares1 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: start;
+        align-content: center;
+    }
+
+    #forms_pares2 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: start;
+        align-content: center;
+    }
 
 
 }
