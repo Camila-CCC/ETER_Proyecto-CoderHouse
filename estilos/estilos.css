@@ -659,6 +659,13 @@ footer .iconos_redes {
     padding: 0px;
     text-align: center;
   }
+  header nav ul li {
+    text-align: center;
+    font-weight: 300;
+  }
+  header nav ul li a {
+    white-space: nowrap;
+  }
   header nav ul .dis_none {
     display: none;
   }
