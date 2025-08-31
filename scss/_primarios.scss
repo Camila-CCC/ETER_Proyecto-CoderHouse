@@ -89,15 +89,15 @@ header {
     z-index: 1000;
     @include flex_rsc;
 
-    .logo {
-        width: 70px;
-    }
-
     a {
         color: $blanco;
         text-decoration: none;
         font-family: $font_titulo;
         margin: 0px 20px;
+
+        .logo {
+            width: 70px;
+        }
     }
 
     nav {

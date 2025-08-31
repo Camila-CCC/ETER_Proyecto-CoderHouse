@@ -76,14 +76,14 @@ header {
   justify-content: flex-start;
   align-items: center;
 }
-header .logo {
-  width: 70px;
-}
 header a {
   color: #fff;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   margin: 0px 20px;
+}
+header a .logo {
+  width: 70px;
 }
 header nav ul {
   list-style: none;
@@ -601,33 +601,50 @@ footer .iconos_redes {
   border: solidc 2px #9f0c0c;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   /*General*/
-  h1 {
+  body h1 {
     text-align: center;
+    font-size: 3rem;
   }
-  p {
-    font-size: 1.8rem;
+  body h2 {
+    font-size: 2.6rem;
+  }
+  body h3 {
+    font-size: 2.2rem;
+  }
+  body h4 {
+    font-size: 2.1rem;
+  }
+  body h5 {
+    font-size: 2rem;
+  }
+  body h6 {
+    font-size: 1.9rem;
+  }
+  body p {
+    font-size: 1.6rem;
   }
   /*Header*/
   header {
     height: 70px;
-    justify-content: space-evenly;
-  }
-  .logo {
-    width: 50px;
-    padding: 5px 5px;
+    justify-content: center;
   }
   header a {
     font-size: 1.4rem;
     margin: 0px 18px;
   }
-  nav ul {
+  header a .logo {
+    width: 45px;
+    padding: 4px 2px;
+  }
+  header nav ul {
     width: 100%;
     margin: 0px;
-    padding: 0px 0px;
+    padding: 5px 5px;
+    text-align: center;
   }
-  .dis_none {
+  header nav ul .dis_none {
     display: none;
   }
   /*Página index/HOME ----------*/
@@ -635,8 +652,9 @@ footer .iconos_redes {
   .home_presentacion {
     padding: 5% 8%;
   }
-  .boton {
+  .home_presentacion .boton {
     margin: 5px 0px;
+    font-size: 1.8rem;
   }
   /*Nuevo EP*/
   .home_ep {
@@ -645,8 +663,23 @@ footer .iconos_redes {
     grid-template-rows: auto;
     padding: 5% 8%;
   }
-  .ep_imagen {
+  .home_ep .ep_imagen {
     padding: 0px;
+  }
+  .home_ep .ep_botones {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .home_ep .ep_botones .ep_boton_sf {
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .home_ep .ep_botones .ep_boton_yt {
+    font-size: 1.8rem;
+    margin: 5px 0px;
+    text-align: center;
   }
   /*Fechas*/
   .home_fechas {
@@ -655,21 +688,25 @@ footer .iconos_redes {
     align-items: center;
     padding: 5% 8%;
   }
-  .fechas_contenido {
+  .home_fechas .fechas_contenido {
+    margin-top: 5px;
     width: 100%;
     height: 200px;
     padding: 0%;
   }
-  .fechas_imagen {
+  .home_fechas .fechas_imagen {
     width: 100%;
   }
-  .fechas_imagen_detalle {
+  .home_fechas .fechas_imagen .fechas_imagen_detalle {
     width: 100%;
     object-fit: contain;
   }
   /*Merch*/
   .home_merch {
     padding: 5% 8%;
+  }
+  .home_merch .boton {
+    font-size: 1.8rem;
   }
   /*Busqueda de nuevos integrantes*/
   .home_busqueda {
@@ -678,34 +715,58 @@ footer .iconos_redes {
     align-items: start;
     padding: 10% 8%;
   }
-  .busqueda_contenido {
+  .home_busqueda .busqueda_contenido {
     width: 100%;
     padding-right: 0%;
   }
-  .busqueda_boton {
+  .home_busqueda .busqueda_boton {
     width: 100%;
     padding-top: 2%;
   }
   /*Plataformas y redes*/
-  .plataformas_yt {
-    width: 100%;
-    height: 350px;
+  .home_plataformas {
+    padding: 5% 8%;
   }
-  .yt_iframe {
+  .home_plataformas .home_plataformas_contenido {
+    padding: 0px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_titulo {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_titulo h2 {
+    text-align: left;
+    width: 100%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_yt {
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+    margin: 0px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_yt .yt_iframe {
     height: 200px;
   }
-  .plataformas_3 {
+  .home_plataformas .home_plataformas_contenido .plataformas_3 {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .plataformas_sf {
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_sf {
     width: 100%;
+    height: auto;
+    padding-top: 4%;
   }
-  .plataformas_2 {
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 {
     width: 100%;
-    padding: 4% 0%;
-    height: 320px;
+    height: auto;
+    padding-top: 5%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 .plataformas_ig {
+    padding-top: 5%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 .plataformas_tk {
+    padding-top: 5%;
   }
   /*Página MERCH ----------*/
   /*Grilla de productos*/
