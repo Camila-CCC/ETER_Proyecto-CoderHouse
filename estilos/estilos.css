@@ -92,6 +92,9 @@ header nav ul {
   justify-content: flex-start;
   align-items: center;
 }
+header nav ul li:hover {
+  text-decoration: underline #FBFBFB;
+}
 
 /*Footer*/
 footer {

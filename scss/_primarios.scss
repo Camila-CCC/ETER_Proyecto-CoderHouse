@@ -104,6 +104,10 @@ header {
         ul {
             list-style: none;
             @include flex_rsc;
+
+            li:hover {
+                text-decoration: underline $claro;
+            }
         }
     }
 }
