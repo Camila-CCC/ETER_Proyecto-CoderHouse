@@ -1,0 +1,273 @@
+@use "primarios" as*;
+@use "mixing" as*;
+
+
+
+@media (max-width: 768px) {
+
+    /*General*/
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    /*Header*/
+    header {
+        height: 70px;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 50px;
+        padding: 5px 5px;
+    }
+
+    header a {
+        font-size: 1.4rem;
+        margin: 0px 18px;
+    }
+
+    nav ul {
+        width: 100%;
+        margin: 0px;
+        padding: 0px 0px;
+    }
+
+    .dis_none {
+        display: none;
+    }
+
+
+    /*Página index/HOME ----------*/
+    /*Presentacion*/
+    .home_presentacion {
+        padding: 5% 8%;
+    }
+
+    .boton {
+        margin: 5px 0px;
+    }
+
+
+    /*Nuevo EP*/
+    .home_ep {
+        grid-template-areas:
+            "imagen"
+            "titulo"
+            "subtitulo"
+            "texto1"
+            "texto2"
+            "botones";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        padding: 5% 8%;
+    }
+
+    .ep_imagen {
+        padding: 0px;
+    }
+
+
+    /*Fechas*/
+    .home_fechas {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 8%;
+    }
+
+    .fechas_contenido {
+        width: 100%;
+        height: 200px;
+        padding: 0%;
+    }
+
+    .fechas_imagen {
+        width: 100%;
+    }
+
+    .fechas_imagen_detalle {
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+    /*Merch*/
+    .home_merch {
+        padding: 5% 8%;
+    }
+
+
+    /*Busqueda de nuevos integrantes*/
+    .home_busqueda {
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding: 10% 8%;
+    }
+
+    .busqueda_contenido {
+        width: 100%;
+        padding-right: 0%;
+    }
+
+    .busqueda_boton {
+        width: 100%;
+        padding-top: 2%;
+    }
+
+
+    /*Plataformas y redes*/
+
+    .plataformas_yt {
+        width: 100%;
+        height: 350px;
+    }
+
+    .yt_iframe {
+        height: 200px;
+    }
+
+    .plataformas_3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plataformas_sf {
+        width: 100%;
+    }
+
+    .plataformas_2 {
+        width: 100%;
+        padding: 4% 0%;
+        height: 320px;
+    }
+
+    /*Página MERCH ----------*/
+    /*Grilla de productos*/
+    .grilla_de_productos {
+        grid-template-columns: 1fr;
+        padding: 2% 12%;
+    }
+
+    /*Información*/
+
+    .merch_informacion {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+    }
+
+    .informacion {
+        width: 100%;
+    }
+
+    /*Página Sobre Nosotros ----------*/
+    /*Grilla de integrantes*/
+
+    .integrantes_titulo {
+        text-align: center;
+        padding: 5% 10% 0% 10%;
+
+    }
+
+    .grilla_de_integrantes {
+        width: 100%;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .card_integrante {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0% 0% 0% 0%;
+    }
+
+    .integrantes_fotos {
+        width: 100%;
+        object-fit: cover;
+        margin: 0px 0px;
+    }
+
+    .integrantes_contenido {
+        padding: 0% 0% 6% 0%;
+        flex-direction: column;
+    }
+
+    .integrantes_p {
+        font-size: 1.5rem;
+    }
+
+
+    .historia_titulo {
+        padding: 7% 10% 0% 10%;
+        text-align: left;
+        margin: 0px;
+    }
+
+    .nosotros_historia {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenido_integrantes {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .foto_integrantes {
+        width: 100%;
+    }
+
+    .colum_reverse {
+        flex-direction: column;
+        padding-bottom: 20%;
+    }
+
+    /*Formulario de contacto*/
+    .formulario_para_unirse div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulario_para_unirse input {
+        width: 100%;
+    }
+
+    .formulario_para_unirse textarea {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        text-align: center;
+    }
+
+    #forms_pares1 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: start;
+        align-content: center;
+    }
+
+    #forms_pares2 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: start;
+        align-content: center;
+    }
+
+
+}

@@ -1,0 +1,113 @@
+@use "primarios" as*;
+@use "mixing" as*;
+
+
+/* Página Sobre Nosotros --------------------------------------------------------------------*/
+
+/*Titulo*/
+
+.nosotros_titulo {
+    @include flex (row, center, center);
+    @include section_wh(100%, auto);
+    padding: 4% 5%;
+}
+
+.nosotros_banner {
+    width: 100%;
+}
+
+.integrantes_titulo {
+    padding: 4% 10% 0% 10%;
+    text-align: left;
+}
+
+
+
+.grilla_de_integrantes {
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 2% 10%;
+
+    .card_integrante {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 2% 5% 2% 0%;
+
+        .integrantes_fotos {
+            @include section_wh(250px, auto);
+            object-fit: contain;
+            margin: 15px 0px;
+            border-radius: 3px;
+        }
+
+        .integrantes_contenido {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5% 10% 5% 2%;
+
+            .integrantes_p {
+                font-size: 1.8rem;
+            }
+
+            .integrantes_icono {
+                @include section_wh(25px, auto);
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+/*Historia*/
+
+.historia_titulo {
+    background-color: $gris;
+    padding: 4% 10% 0% 10%;
+    text-align: left;
+    margin: 0px;
+}
+
+
+.nosotros_historia {
+    @include section($gris, 100%, 400px);
+    @include flex_rsc;
+    padding: 2% 10% 4% 10%;
+
+    .contenido_integrantes {
+        @include section_wh (50%, 300px);
+        padding: 2% 6% 2% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .foto_integrantes {
+        @include section_wh (50%, 300px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .foto_integrantes_detalle {
+            @include section_wh (100%, auto);
+            object-fit: contain;
+        }
+    }
+}
+
+/*Newsletter*/
+
+.nosotros_newsletter {
+    @include section_wh (100%, 350px);
+    @include flex (column, space-evenly, center);
+    padding: 4% 10%;
+    text-align: center;
+}
+
+#mail {
+    @include section_wh (40%, auto);
+    margin: 2% 10% 2% 10%;
+}

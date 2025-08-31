@@ -1,0 +1,187 @@
+@use "primarios" as*;
+@use "mixing" as*;
+
+
+/*Home/index----------------*/
+
+.home_presentacion {
+    @include section($gris, 100%, auto);
+    @include flex(column, center, center);
+    padding: 4% 5%;
+
+    .centrado {
+        text-align: center;
+    }
+}
+
+/*Nuevo EP*/
+
+.home_ep {
+    display: grid;
+    grid-template-areas:
+        "imagen titulo"
+        "imagen subtitulo"
+        "imagen texto1"
+        "imagen texto2"
+        "imagen botones";
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 70px 60px 70px 120px 60px;
+    justify-content: center;
+    justify-items: start;
+    align-items: start;
+    background-color: $claro;
+    padding: 4% 8%;
+
+    .ep_imagen {
+        width: 100%;
+        height: 100%;
+        grid-area: imagen;
+        display: flex;
+        justify-content: start;
+        padding-right: 3%;
+
+        .ep_imagen_detalle {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: left;
+        }
+    }
+
+    .ep_titulo {
+        grid-area: titulo;
+    }
+
+    .ep_subtitulo {
+        grid-area: subtitulo;
+        font-size: 2.1rem;
+    }
+
+    .ep_texto1 {
+        grid-area: texto1;
+        padding-bottom: 15px;
+    }
+
+    .ep_texto2 {
+        grid-area: texto2;
+        padding-bottom: 10px;
+    }
+
+    .ep_botones {
+        grid-area: botones;
+        display: flex;
+        width: 100%;
+
+        .ep_boton_sf {
+            @extend .boton;
+            margin: 5px 15px 0px 0px;
+        }
+
+        .ep_boton_yt {
+            @extend .boton;
+            margin: 5px 0px 0px 0px;
+        }
+    }
+}
+
+/*Fechas*/
+
+.home_fechas {
+    @include section ($gris, 100%, auto);
+    padding: 4% 8%;
+    @include flex (row, center, center);
+
+    .fechas_contenido {
+        @include section_wh (40%, 350px);
+        padding-right: 2%;
+        @include flex (column, space-around, flex-start)
+    }
+
+    .fechas_imagen {
+        width: 50%;
+
+        .fechas_imagen_detalle {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+/*Merch oficial*/
+
+.home_merch {
+    background-image: url(../recursos_graficos/banner_merch.png);
+    background-size: cover;
+    background-position: center;
+    @include section_wh (100%, 450px);
+    @include flex (column, center, center);
+    text-align: center;
+    color: $blanco;
+}
+
+
+/*Busqueda de nuevos integrantes*/
+.home_busqueda {
+    @include section ($gris, 100%, auto);
+    padding: 4% 8%;
+    @include flex (row, center, center);
+
+    .busqueda_contenido {
+        width: 60%;
+        padding-right: 15%;
+
+        .disclaimer {
+            font-size: 1.5rem;
+            color: $oscuro;
+            padding: 0px;
+        }
+    }
+
+    .busqueda_boton {
+        width: 30%;
+    }
+}
+
+/*Plataformas y redes*/
+
+.home_plataformas {
+    @include section($claro, 100%, auto);
+
+    .home_plataformas_contenido {
+        width: 100%;
+        padding: 4% 8%;
+        @include flex (column, center, center);
+
+        .plataformas_titulo {
+            width: 100%;
+            @include flex (column, center, center);
+            padding-bottom: 2%;
+        }
+
+        .plataformas_yt {
+            @include section_wh (90%, 700px);
+            @include flex(column, center, start);
+            padding: 4% 0%;
+
+            .yt_iframe {
+                @include section_wh (100%, 500px);
+            }
+        }
+
+        .plataformas_3 {
+            @include section_wh(90%, auto);
+            @include flex(row, center, flex-end);
+
+            .plataformas_sf {
+                @include section_wh(60%, auto);
+                @include flex(column, center, start);
+                padding-right: 4%;
+            }
+
+            .plataformas_2 {
+                @include section_wh(40%, 352px);
+                @include flex(column, space-between, start);
+            }
+        }
+    }
+}

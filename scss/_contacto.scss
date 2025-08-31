@@ -1,0 +1,82 @@
+@use "primarios" as*;
+@use "mixing" as*;
+
+/* Página de Contacto --------------------------------------------------------------------*/
+
+/*Contacto profesional*/
+
+.contacto_titulo {
+    padding: 4% 10%;
+}
+
+.contacto_profesional {
+    @include section ($claro, 100%, auto);
+    padding: 2% 10%;
+}
+
+/*Formulario*/
+
+
+.formulario_para_unirse {
+    @include section_wh (100%, auto);
+    padding: 2% 10%;
+
+    h2 {
+        padding: 2% 0%;
+    }
+
+    form {
+        background: $gris;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px;
+        border-radius: 6px;
+
+
+        label {
+            margin-bottom: 0px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid $gris_claro;
+            border-radius: 6px;
+            background: $claro;
+            color: $oscuro;
+        }
+
+        textarea {
+            @include section_wh(100%, 100px);
+            padding: 10px;
+            border: 1px solid $gris_claro;
+            border-radius: 6px;
+            background: $claro;
+            color: $oscuro;
+            border: 1px solid #a0a0a0;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+            margin-top: 10px;
+        }
+
+        /* Botón */
+        input[type="submit"] {
+            background: $bordo;
+            color: $blanco;
+            text-decoration: none;
+            border-radius: 6px;
+            padding: 12px;
+            display: inline-block;
+            border: solid 2px $terracota;
+        }
+
+        input[type="submit"]:hover {
+            background-color: $rojo;
+            border: solidc 2px $rojo;
+        }
+    }
+}

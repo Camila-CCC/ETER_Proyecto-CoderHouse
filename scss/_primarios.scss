@@ -1,0 +1,163 @@
+/*Básicos---------------------*/
+@use "mixing" as*;
+
+//Paleta de colores
+
+$bordo: #8E1616;
+$rojo: #9f0c0c;
+$terracota: #832727;
+
+$cremita: #E9CA9B;
+$gris: #e3e3e3b5;
+$gris_claro: #b0b0b0;
+
+$claro: #FBFBFB;
+$oscuro: #1F1F1F;
+
+$blanco: #fff;
+$negro: #000;
+
+//Fonts
+
+$font_titulo: "Oswald", sans-serif;
+$font_contenido: "Roboto Condensed", sans-serif;
+
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font_contenido;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+/*Base de todas las páginas----------------------*/
+/*Body*/
+
+body {
+    font-size: 2rem;
+    font-family: $font_contenido;
+    line-height: 1.2;
+
+    h1 {
+        @include titulos(4rem)
+    }
+
+    h2 {
+        @include titulos(2.8rem)
+    }
+
+    h3 {
+        @include titulos(2.4rem)
+    }
+
+    h4 {
+        @include titulos(2.2rem)
+    }
+
+    h5 {
+        @include titulos(2.1rem)
+    }
+
+    h6 {
+        @include titulos(2rem)
+    }
+
+    main {
+        a {
+            color: $bordo;
+        }
+    }
+
+    .bordo {
+        color: $bordo
+    }
+
+}
+
+/*Header*/
+
+header {
+    @include section ($oscuro, 100%, 90px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    @include flex_rsc;
+
+    .logo {
+        width: 70px;
+    }
+
+    a {
+        color: $blanco;
+        text-decoration: none;
+        font-family: $font_titulo;
+        margin: 0px 20px;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            @include flex_rsc;
+        }
+    }
+}
+
+/*Footer*/
+
+footer {
+    @include section($oscuro, 100%, 60px);
+    @include flex(row, space-between, center);
+    bottom: 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        @include titulos(2rem);
+        color: $blanco;
+        padding: 0px 20px;
+        margin: 0px;
+    }
+
+    img {
+        height: 20px;
+        padding: 0px 5px;
+    }
+
+    .iconos_redes {
+        margin-right: 15px;
+    }
+
+}
+
+/*Elementos------------*/
+
+.boton {
+    background-color: $bordo;
+    padding: 5px 20px;
+    border-radius: 6px;
+    margin: 15px 0px;
+    border: solid $terracota 2px;
+    display: inline-block;
+    color: $blanco;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: $rojo;
+    border: solid $rojo 2px;
+}
+
+.boton_plataformas {
+    @extend .boton;
+    font-size: 1.5rem;
+    background-color: $negro;
+    border: $oscuro solid 2px;
+}

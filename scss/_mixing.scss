@@ -1,0 +1,31 @@
+@mixin titulos($font_size) {
+    font-size: $font_size;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+@mixin section($fondo, $ancho, $alto) {
+    background-color: $fondo;
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin section_wh ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex_rsc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

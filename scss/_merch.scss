@@ -1,0 +1,73 @@
+@use "primarios" as*;
+@use "mixing" as*;
+
+/* Página Merch --------------------------------------------------------------------*/
+
+/*Titulo*/
+
+.titulo_merch {
+    @include section_wh(100%, auto);
+    @include flex (column, center, center);
+    padding: 5% 10%;
+    text-align: center;
+}
+
+/*Grilla de productos*/
+
+.grilla_de_productos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include section_wh(100%, auto);
+    padding: 1% 15%;
+    align-items: center;
+
+    .card_de_producto {
+        background-color: $blanco;
+        border-radius: 6px;
+        margin: 15px;
+        padding: 20px;
+        box-shadow: 1px 1px 10px -1px rgba(130, 130, 130, 0.79);
+        -webkit-box-shadow: 1px 2px 18px -1px rgba(105, 105, 105, 0.79);
+        -moz-box-shadow: 1px 2px 18px -1px rgba(107, 107, 107, 0.79);
+
+        .card-img-top {
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+
+        .card-title {
+            font-size: 2rem;
+        }
+
+        .btn {
+            background-color: $bordo;
+            font-size: 1.5rem;
+            font-family: $font_contenido;
+        }
+
+        .btn:hover {
+            background-color: $rojo;
+        }
+    }
+}
+
+
+.merch_informacion {
+    @include section($gris, 100%, 100px);
+    @include flex(row, space-evenly, center);
+
+    .informacion {
+        @include flex(row, center, center);
+        @include section_wh(30%, auto);
+
+        .info_imag {
+            margin: 15px;
+        }
+
+        .info_p {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+}
