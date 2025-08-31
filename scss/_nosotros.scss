@@ -73,29 +73,49 @@
 
 
 .nosotros_historia {
-    @include section($gris, 100%, 400px);
-    @include flex_rsc;
+    @include section($gris, 100%, auto);
     padding: 2% 10% 4% 10%;
 
-    .contenido_integrantes {
-        @include section_wh (50%, 300px);
-        padding: 2% 6% 2% 0%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    .nosotros_historia_1 {
+        @include flex (row, space-between, center);
+        padding: 3% 0%;
 
-    .foto_integrantes {
-        @include section_wh (50%, 300px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        .contenido_integrantes_1 {
+            @include section_wh (50%, auto);
+            @include flex (column, space-between, center);
+            padding: 4% 6% 4% 0%;
+        }
 
-        .foto_integrantes_detalle {
-            @include section_wh (100%, auto);
-            object-fit: contain;
+        .foto_integrantes_1 {
+            @include section_wh (50%, auto);
+
+            .foto_integrantes_detalle_1 {
+                @include section_wh (100%, auto);
+                object-fit: contain;
+                border-radius: 10px;
+            }
         }
     }
+
+    .nosotros_historia_2 {
+        @extend .nosotros_historia_1;
+
+        .contenido_integrantes_2 {
+            @extend .contenido_integrantes_1;
+            padding: 4% 0% 4% 6%;
+        }
+
+        .foto_integrantes_2 {
+            @extend .foto_integrantes_1;
+
+            .foto_integrantes_detalle_2 {
+                @extend .foto_integrantes_detalle_1;
+            }
+        }
+
+    }
+
+
 }
 
 /*Newsletter*/
@@ -105,9 +125,10 @@
     @include flex (column, space-evenly, center);
     padding: 4% 10%;
     text-align: center;
-}
 
-#mail {
+    #mail {
     @include section_wh (40%, auto);
     margin: 2% 10% 2% 10%;
 }
+}
+

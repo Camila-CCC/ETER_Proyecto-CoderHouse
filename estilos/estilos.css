@@ -484,34 +484,38 @@ footer .iconos_redes {
 .nosotros_historia {
   background-color: rgba(227, 227, 227, 0.7098039216);
   width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  height: auto;
   padding: 2% 10% 4% 10%;
 }
-.nosotros_historia .contenido_integrantes {
+.nosotros_historia .nosotros_historia_1, .nosotros_historia .nosotros_historia_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 0%;
+}
+.nosotros_historia .nosotros_historia_1 .contenido_integrantes_1, .nosotros_historia .nosotros_historia_2 .contenido_integrantes_1, .nosotros_historia .nosotros_historia_2 .contenido_integrantes_2 {
   width: 50%;
-  height: 300px;
-  padding: 2% 6% 2% 0%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 4% 6% 4% 0%;
 }
-.nosotros_historia .foto_integrantes {
+.nosotros_historia .nosotros_historia_1 .foto_integrantes_1, .nosotros_historia .nosotros_historia_2 .foto_integrantes_1, .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 {
   width: 50%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: auto;
 }
-.nosotros_historia .foto_integrantes .foto_integrantes_detalle {
+.nosotros_historia .nosotros_historia_1 .foto_integrantes_1 .foto_integrantes_detalle_1, .nosotros_historia .nosotros_historia_2 .foto_integrantes_1 .foto_integrantes_detalle_1, .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 .foto_integrantes_detalle_1, .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 .foto_integrantes_detalle_2 {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 10px;
 }
-
+.nosotros_historia .nosotros_historia_2 .contenido_integrantes_2 {
+  padding: 4% 0% 4% 6%;
+}
 /*Newsletter*/
 .nosotros_newsletter {
   width: 100%;
@@ -523,8 +527,7 @@ footer .iconos_redes {
   padding: 4% 10%;
   text-align: center;
 }
-
-#mail {
+.nosotros_newsletter #mail {
   width: 40%;
   height: auto;
   margin: 2% 10% 2% 10%;
@@ -768,7 +771,7 @@ footer .iconos_redes {
   .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 .plataformas_tk {
     padding-top: 5%;
   }
-  /*Página MERCH ----------*/
+  /*Página MERCH ------------------------*/
   /*Grilla de productos*/
   .grilla_de_productos {
     grid-template-columns: 1fr;
@@ -781,10 +784,10 @@ footer .iconos_redes {
     width: 100%;
     height: 150px;
   }
-  .informacion {
+  .merch_informacion .informacion {
     width: 100%;
   }
-  /*Página Sobre Nosotros ----------*/
+  /*Página Sobre Nosotros ----------------*/
   /*Grilla de integrantes*/
   .integrantes_titulo {
     text-align: center;
@@ -795,46 +798,80 @@ footer .iconos_redes {
     grid-template-columns: 1fr;
     height: auto;
   }
-  .card_integrante {
+  .grilla_de_integrantes .card_integrante {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 0% 0% 0% 0%;
+    margin-top: 20px;
   }
-  .integrantes_fotos {
+  .grilla_de_integrantes .card_integrante .integrantes_fotos {
     width: 100%;
+    height: 250px;
     object-fit: cover;
+    object-position: 50% 20%;
     margin: 0px 0px;
   }
-  .integrantes_contenido {
+  .grilla_de_integrantes .card_integrante .integrantes_contenido {
     padding: 0% 0% 6% 0%;
     flex-direction: column;
   }
-  .integrantes_p {
+  .grilla_de_integrantes .card_integrante .integrantes_contenido .integrantes_p {
     font-size: 1.5rem;
   }
+  /*Historia*/
   .historia_titulo {
     padding: 7% 10% 0% 10%;
     text-align: left;
     margin: 0px;
   }
-  .nosotros_historia {
+  .nosotros_historia .nosotros_historia_1 {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column-reverse;
-    width: 100%;
-    height: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
-  .contenido_integrantes {
+  .nosotros_historia .nosotros_historia_1 .contenido_integrantes_1 {
     width: 100%;
-    padding-right: 0px;
+    padding: 20px 0px 0px 0px;
   }
-  .foto_integrantes {
+  .nosotros_historia .nosotros_historia_1 .foto_integrantes_1 {
     width: 100%;
   }
-  .colum_reverse {
+  .nosotros_historia .nosotros_historia_1 .foto_integrantes_1 .foto_integrantes_detalle_1 {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .nosotros_historia .nosotros_historia_2 {
+    width: 100%;
+    height: auto;
+    display: flex;
     flex-direction: column;
-    padding-bottom: 20%;
+    justify-content: space-between;
+    align-items: center;
   }
+  .nosotros_historia .nosotros_historia_2 .contenido_integrantes_2 {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 {
+    width: 100%;
+  }
+  .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 .foto_integrantes_detalle_2 {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .nosotros_newsletter {
+    height: 250px;
+    justify-content: space-evenly;
+    padding: 6% 6%;
+  }
+  .nosotros_newsletter #mail {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  /*Página Contacto -----------------*/
   /*Formulario de contacto*/
   .formulario_para_unirse div {
     flex-direction: column;

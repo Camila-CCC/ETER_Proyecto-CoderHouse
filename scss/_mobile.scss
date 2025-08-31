@@ -236,7 +236,7 @@
 
 
 
-    /*Página MERCH ----------*/
+    /*Página MERCH ------------------------*/
     /*Grilla de productos*/
     .grilla_de_productos {
         grid-template-columns: 1fr;
@@ -250,18 +250,21 @@
         justify-content: center;
         width: 100%;
         height: 150px;
+
+        .informacion {
+            width: 100%;
+        }
     }
 
-    .informacion {
-        width: 100%;
-    }
 
-    /*Página Sobre Nosotros ----------*/
+
+    /*Página Sobre Nosotros ----------------*/
     /*Grilla de integrantes*/
 
     .integrantes_titulo {
         text-align: center;
         padding: 5% 10% 0% 10%;
+
 
     }
 
@@ -269,30 +272,34 @@
         width: 100%;
         grid-template-columns: 1fr;
         height: auto;
+
+        .card_integrante {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            .integrantes_fotos {
+                @include section_wh (100%, 250px);
+                object-fit: cover;
+                object-position: 50% 20%;
+                margin: 0px 0px;
+            }
+
+            .integrantes_contenido {
+                padding: 0% 0% 6% 0%;
+                flex-direction: column;
+
+                .integrantes_p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 
-    .card_integrante {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-top: 0% 0% 0% 0%;
-    }
 
-    .integrantes_fotos {
-        width: 100%;
-        object-fit: cover;
-        margin: 0px 0px;
-    }
 
-    .integrantes_contenido {
-        padding: 0% 0% 6% 0%;
-        flex-direction: column;
-    }
-
-    .integrantes_p {
-        font-size: 1.5rem;
-    }
-
+    /*Historia*/
 
     .historia_titulo {
         padding: 7% 10% 0% 10%;
@@ -301,25 +308,57 @@
     }
 
     .nosotros_historia {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: 100%;
+        .nosotros_historia_1 {
+            @include section_wh (100%, auto);
+            @include flex (column-reverse, space-between, center);
+
+            .contenido_integrantes_1 {
+                width: 100%;
+                padding: 20px 0px 0px 0px;
+            }
+
+            .foto_integrantes_1 {
+                width: 100%;
+
+                .foto_integrantes_detalle_1 {
+                    width: 100%;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .nosotros_historia_2 {
+            @include section_wh (100%, auto);
+            @include flex (column, space-between, center);
+
+            .contenido_integrantes_2 {
+                width: 100%;
+                padding: 20px 0px 0px 0px;
+            }
+
+            .foto_integrantes_2 {
+                width: 100%;
+
+                .foto_integrantes_detalle_2 {
+                    width: 100%;
+                    border-radius: 4px;
+                }
+            }
+        }
     }
 
-    .contenido_integrantes {
-        width: 100%;
-        padding-right: 0px;
+    .nosotros_newsletter {
+        height: 250px;
+        justify-content: space-evenly;
+        padding: 6% 6%;
+
+        #mail {
+            width: 80%;
+            margin-bottom: 20px;
+        }
     }
 
-    .foto_integrantes {
-        width: 100%;
-    }
-
-    .colum_reverse {
-        flex-direction: column;
-        padding-bottom: 20%;
-    }
+    /*Página Contacto -----------------*/
 
     /*Formulario de contacto*/
     .formulario_para_unirse div {
