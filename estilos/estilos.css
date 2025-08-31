@@ -473,19 +473,20 @@ footer .iconos_redes {
   object-fit: contain;
 }
 
-/*Historia*/
-.historia_titulo {
-  background-color: rgba(227, 227, 227, 0.7098039216);
-  padding: 4% 10% 0% 10%;
-  text-align: left;
-  margin: 0px;
-}
-
+/*Nuestra Historia*/
 .nosotros_historia {
   background-color: rgba(227, 227, 227, 0.7098039216);
   width: 100%;
   height: auto;
+  background: rgba(227, 227, 227, 0.7098039216);
+  /*Gradiente*/
+  background: linear-gradient(180deg, rgb(227, 227, 227) 0%, rgb(251, 251, 251) 78%);
   padding: 2% 10% 4% 10%;
+}
+.nosotros_historia .historia_titulo {
+  padding: 4% 0%;
+  text-align: left;
+  margin: 0px;
 }
 .nosotros_historia .nosotros_historia_1, .nosotros_historia .nosotros_historia_2 {
   display: flex;
@@ -838,7 +839,7 @@ footer .iconos_redes {
     font-size: 1.5rem;
   }
   /*Historia*/
-  .historia_titulo {
+  .nosotros_historia .historia_titulo {
     padding: 7% 10% 0% 10%;
     text-align: left;
     margin: 0px;

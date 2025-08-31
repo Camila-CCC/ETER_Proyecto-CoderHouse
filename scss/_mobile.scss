@@ -75,7 +75,6 @@
 
                     a {
                         white-space: nowrap;
-
                     }
                 }
 
@@ -316,14 +315,14 @@
 
 
     /*Historia*/
-
-    .historia_titulo {
-        padding: 7% 10% 0% 10%;
-        text-align: left;
-        margin: 0px;
-    }
-
     .nosotros_historia {
+
+        .historia_titulo {
+            padding: 7% 10% 0% 10%;
+            text-align: left;
+            margin: 0px;
+        }
+
         .nosotros_historia_1 {
             @include section_wh (100%, auto);
             @include flex (column-reverse, space-between, center);

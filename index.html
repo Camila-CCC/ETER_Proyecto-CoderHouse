@@ -17,7 +17,8 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Estilos-->
     <link rel="stylesheet" href="./estilos/estilos.css">
 
@@ -90,16 +91,16 @@
 
         <!--Presentación-->
         <section class="home_presentacion">
-            <h1>Hola! Nosotros somos ETER.</h1>
-            <p class="centrado">Una banda de rock alternativo fundado en 2023 por Leonel y Camila.</p>
-            <a href="./pages/sobre_eter.html" class="boton">Conocé más sobre la banda!</a>
+            <h1 data-aos="fade-in" data-aos-duration="1000">Hola! Nosotros somos ETER.</h1>
+            <p data-aos="fade-in" data-aos-duration="1200" class="centrado">Una banda de rock alternativo fundado en 2023 por Leonel y Camila.</p>
+            <a data-aos="fade-in" data-aos-duration="1400" href="./pages/sobre_eter.html" class="boton">Conocé más sobre la banda!</a>
         </section>
 
 
         <!--Nuevo EP (se utilizó grid)-->
         <section class="home_ep">
             <div class="ep_imagen">
-                <img class="ep_imagen_detalle" src="./recursos_graficos/portada_avanzar.png"
+                <img data-aos="fade-right" data-aos-duration="1000" class="ep_imagen_detalle" src="./recursos_graficos/portada_avanzar.png"
                     alt="Portada del nuevo EP avanzar">
             </div>
             <h2 class="ep_titulo">Escuchá nuestro nuevo EP!</h2>
@@ -111,8 +112,9 @@
                 hablamos de lo más importante: <strong>aprender a soltar y dejar atrás lo que nos duele.</strong>
             </p>
             <div class="ep_botones">
-                <a class="boton ep_boton_sf" href="https://open.spotify.com/intl-es/artist/1zNyabRbsAXrlxkHOWHmf2?go=1&sp_cid=9f276238ddce17f201e0b6b25065a098&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=fe0beb204ac948c2" target="_blank"
-                    role="button">Escuchar en
+                <a class="boton ep_boton_sf"
+                    href="https://open.spotify.com/intl-es/artist/1zNyabRbsAXrlxkHOWHmf2?go=1&sp_cid=9f276238ddce17f201e0b6b25065a098&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=fe0beb204ac948c2"
+                    target="_blank" role="button">Escuchar en
                     Spotify</a>
                 <a class="boton ep_boton_yt" href="https://www.youtube.com/@Eter_oficial" target="_blank"
                     role="button">Ver en Youtube</a>
@@ -135,7 +137,7 @@
                 <p>Las entradas son gratuitas, solo tenés que reservar tu lugar al 15-1234-5678.</p>
             </div>
             <div class="fechas_imagen">
-                <img src="./recursos_graficos/proximas_fechas.png" alt="Foto de la banda tocando en vivo"
+                <img data-aos="fade-left" data-aos-duration="1000" src="./recursos_graficos/proximas_fechas.png" alt="Foto de la banda tocando en vivo"
                     class="fechas_imagen_detalle">
             </div>
         </section>
@@ -160,8 +162,9 @@
                 <p class="disclaimer">No te va a llevar más de 2 minutos. 🤗</p>
             </div>
 
-            <div class="busqueda_boton">
-                <a href="./pages/contacto.html#formulario_para_unirse" role="button" class="boton">Completar el formulario</a>
+            <div class="busqueda_boton" data-aos="zoom-in" data-aos-duration="1000">
+                <a href="./pages/contacto.html#formulario_para_unirse" role="button" class="boton">Completar el
+                    formulario</a>
             </div>
         </section>
 
@@ -172,7 +175,8 @@
 
                 <div class="plataformas_titulo">
                     <h2>Plataformas y redes sociales</h2>
-                    <p>Seguinos en nuestas redes y enterate de las <strong class="bordo">últimas novedades y lanzamientos!</strong></p>
+                    <p>Seguinos en nuestas redes y enterate de las <strong class="bordo">últimas novedades y
+                            lanzamientos!</strong></p>
                 </div>
 
                 <div class="plataformas_yt">
@@ -196,7 +200,7 @@
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"></iframe>
                     </div>
-                    <div class="plataformas_2" >
+                    <div class="plataformas_2">
                         <div class="plataformas_ig">
                             <h3>Instagram</h3>
                             <p>Podrás ver un poco más del detrás de escena y enterarte de próximas fechas y
@@ -259,6 +263,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         </script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

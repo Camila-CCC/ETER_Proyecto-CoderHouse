@@ -17,7 +17,8 @@
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--Estilos-->
   <link rel="stylesheet" href="../estilos/estilos.css">
 
@@ -50,7 +51,7 @@
   <main>
 
     <!--Título y banner-->
-    <h1 class="nosotros_titulo">Sobre nosotros</h1>
+    <h1 data-aos="fade-in" data-aos-duration="1000" class="nosotros_titulo">Sobre nosotros</h1>
     <img src="../recursos_graficos/banner_sobre_nosotros.png" alt="Foto de los miembros de la banda"
       class="nosotros_banner">
 
@@ -61,7 +62,7 @@
       <!--Card de integrante-->
       <div class="card_integrante">
         <div>
-          <img class="integrantes_fotos" src="../recursos_graficos/card_integrante_leo.png"
+          <img data-aos="zoom-in" data-aos-duration="1000" class="integrantes_fotos" src="../recursos_graficos/card_integrante_leo.png"
             alt="Foto de Leo, miembro de ETER.">
         </div>
         <div class="integrantes_contenido">
@@ -78,7 +79,7 @@
 
       <div class="card_integrante">
         <div>
-          <img class="integrantes_fotos" src="../recursos_graficos/card_integrante_cami.png"
+          <img data-aos="zoom-in" data-aos-duration="1000"     data-aos-delay="50" class="integrantes_fotos" src="../recursos_graficos/card_integrante_cami.png"
             alt="Foto de Cami, miembro de ETER.">
         </div>
         <div class="integrantes_contenido">
@@ -95,7 +96,7 @@
 
       <div class="card_integrante">
         <div>
-          <img class="integrantes_fotos" src="../recursos_graficos/card_integrante_diego.png"
+          <img data-aos="zoom-in" data-aos-duration="1000" class="integrantes_fotos" src="../recursos_graficos/card_integrante_diego.png"
             alt="Foto de Diego, miembro de ETER.">
         </div>
         <div class="integrantes_contenido">
@@ -111,7 +112,7 @@
 
       <div class="card_integrante">
         <div>
-          <img class="integrantes_fotos" src="../recursos_graficos/card_integrante_dani.png"
+          <img data-aos="zoom-in" data-aos-duration="1000"     data-aos-delay="50" class="integrantes_fotos" src="../recursos_graficos/card_integrante_dani.png"
             alt="Foto de Dani, miembro de ETER.">
         </div>
         <div class="integrantes_contenido">
@@ -127,8 +128,8 @@
     </section>
 
     <!--Historia------->
-    <h2 class="historia_titulo">Nuestra historia</h2>
     <section class="nosotros_historia">
+      <h2 class="historia_titulo">Nuestra historia</h2>
 
       <!--1er Bloque-->
       <div class="nosotros_historia_1">
@@ -145,7 +146,7 @@
         </div>
 
         <div class="foto_integrantes_1">
-          <img src="../recursos_graficos/foto_leo_y_cami.png"
+          <img data-aos="fade-up-left" data-aos-duration="1500" src="../recursos_graficos/foto_leo_y_cami.png"
             alt="Foto de los primeros miembros de la banda, Leo y Cami" class="foto_integrantes_detalle_1">
         </div>
       </div>
@@ -154,7 +155,7 @@
       <div class="nosotros_historia_2">
 
         <div class="foto_integrantes_2">
-          <img src="../recursos_graficos/foto_de_la_banda.png"
+          <img data-aos="fade-up-right" data-aos-duration="1500" src="../recursos_graficos/foto_de_la_banda.png"
             alt="Foto de los primeros miembros de la banda, Leo y Cami" class="foto_integrantes_detalle_2">
         </div>
 
@@ -227,6 +228,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
     </script>
+  <!--AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
