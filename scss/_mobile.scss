@@ -361,41 +361,70 @@
     /*Página Contacto -----------------*/
 
     /*Formulario de contacto*/
-    .formulario_para_unirse div {
-        flex-direction: column;
-        gap: 10px;
+    .contacto_titulo {
+        padding: 8% 0%; 
     }
 
-    .formulario_para_unirse input {
-        width: 100%;
+    .contacto_profesional {
+        @include section ($gris, 100%, auto);
+        padding: 4% 10%;
     }
 
-    .formulario_para_unirse textarea {
-        width: 100%;
+    .formulario_para_unirse {
+    
+        .titulo_form {
+            padding: 8% 0%;
+        }
+
+        div {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-size: 1.6rem;
+        }
+
+        input {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        textarea {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            text-align: center;
+        }
+
+        #forms_pares1 {
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            justify-content: center;
+            align-items: center;
+            justify-items: start;
+            align-content: center;
+        }
+
+        #forms_pares2 {
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            justify-content: center;
+            align-items: center;
+            justify-items: start;
+            align-content: center;
+        }
+
     }
 
-    input[type="submit"] {
-        width: 100%;
-        text-align: center;
-    }
 
-    #forms_pares1 {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        justify-content: center;
-        align-items: center;
-        justify-items: start;
-        align-content: center;
-    }
 
-    #forms_pares2 {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        justify-content: center;
-        align-items: center;
-        justify-items: start;
-        align-content: center;
-    }
+
+
+
 
 
 }

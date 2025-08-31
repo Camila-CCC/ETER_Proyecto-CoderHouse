@@ -873,31 +873,48 @@ footer .iconos_redes {
   }
   /*Página Contacto -----------------*/
   /*Formulario de contacto*/
+  .contacto_titulo {
+    padding: 8% 0%;
+  }
+  .contacto_profesional {
+    background-color: rgba(227, 227, 227, 0.7098039216);
+    width: 100%;
+    height: auto;
+    padding: 4% 10%;
+  }
+  .formulario_para_unirse .titulo_form {
+    padding: 8% 0%;
+  }
   .formulario_para_unirse div {
     flex-direction: column;
     gap: 10px;
   }
+  .formulario_para_unirse label {
+    font-size: 1.6rem;
+  }
   .formulario_para_unirse input {
     width: 100%;
+    font-size: 1.5rem;
   }
   .formulario_para_unirse textarea {
     width: 100%;
+    font-size: 1.5rem;
   }
-  input[type=submit] {
+  .formulario_para_unirse input[type=submit] {
     width: 100%;
     text-align: center;
   }
-  #forms_pares1 {
+  .formulario_para_unirse #forms_pares1 {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 8fr;
     justify-content: center;
     align-items: center;
     justify-items: start;
     align-content: center;
   }
-  #forms_pares2 {
+  .formulario_para_unirse #forms_pares2 {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 8fr;
     justify-content: center;
     align-items: center;
     justify-items: start;
