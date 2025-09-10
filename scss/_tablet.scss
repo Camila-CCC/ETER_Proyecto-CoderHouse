@@ -458,7 +458,7 @@
 
     /*Header*/
     header {
-        height: 80px;
+        height: 85px;
         justify-content: center;
 
         a {
@@ -467,7 +467,7 @@
             .logo {
                 width: 65px;
                 padding: 0px;
-                margin: 0px 15px;
+                margin: 0px 10px 0px 30px;
             }
         }
 
@@ -505,27 +505,39 @@
         }
     }
 
-/*Nuevo EP PENDIENTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    /*Nuevo EP*/
     .home_ep {
         grid-template-areas:
-            "titulo"
-            "imagen"
-            "subtitulo"
-            "texto1"
-            "texto2"
-            "botones";
-        grid-template-columns: 100%;
+            "titulo titulo"
+            "imagen subtitulo"
+            "imagen texto1"
+            "imagen texto2"
+            "imagen botones";
+        grid-template-columns: 40% 50%;
         grid-template-rows: auto;
         padding: 5% 8%;
 
         .ep_imagen {
-            padding: 10px 0px 10px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .ep_subtitulo {
+            margin-left: 4%;
+        }
+
+        .ep_texto1 {
+            margin-left: 4%;
+        }
+
+        .ep_texto2 {
+            margin-left: 4%;
         }
 
         .ep_botones {
             flex-direction: row;
             justify-content: flex-start;
             align-items: flex-start;
+            margin-left: 4%;
 
             .ep_boton_sf {
                 margin: 5px 10px 5px 0px;
@@ -537,7 +549,6 @@
                 font-size: 1.7rem;
                 margin: 5px 0px;
                 text-align: center;
-
             }
         }
     }
@@ -605,10 +616,17 @@
             .plataformas_titulo {
                 flex-direction: column;
                 justify-content: flex-start;
+                align-items: flex-start;
 
                 h2 {
                     text-align: left;
                     width: 100%;
+                }
+
+                p {
+                    text-align: left;
+                    padding: 0px;
+                    margin: 0px;
                 }
             }
 
