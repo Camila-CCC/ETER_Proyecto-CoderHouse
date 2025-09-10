@@ -608,6 +608,7 @@ footer .iconos_redes {
   border: solidc 2px #9f0c0c;
 }
 
+/*Adaptado a mobile <480 --------------------------*/
 @media (max-width: 480px) {
   /*General*/
   body h1 {
@@ -700,10 +701,10 @@ footer .iconos_redes {
   .home_ep .ep_botones .ep_boton_sf {
     margin: 5px 0px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .home_ep .ep_botones .ep_boton_yt {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin: 5px 0px;
     text-align: center;
   }
@@ -922,6 +923,686 @@ footer .iconos_redes {
   .formulario_para_unirse textarea {
     width: 100%;
     font-size: 1.5rem;
+  }
+  .formulario_para_unirse input[type=submit] {
+    width: 100%;
+    text-align: center;
+  }
+  .formulario_para_unirse #forms_pares1 {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+    align-content: center;
+  }
+  .formulario_para_unirse #forms_pares2 {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+    align-content: center;
+  }
+}
+/*Adaptado a tablet 481<720 ---------------------------------------*/
+@media (min-width: 481px) and (max-width: 720px) {
+  /*General*/
+  body h1 {
+    text-align: center;
+    font-size: 3.3rem;
+  }
+  body h2 {
+    font-size: 2.6rem;
+  }
+  body h3 {
+    font-size: 2.2rem;
+  }
+  body h4 {
+    font-size: 2.1rem;
+  }
+  body h5 {
+    font-size: 2rem;
+  }
+  body h6 {
+    font-size: 1.9rem;
+  }
+  body p {
+    font-size: 1.6rem;
+  }
+  /*Header*/
+  header {
+    height: 70px;
+    justify-content: center;
+  }
+  header a {
+    font-size: 1.8rem;
+    margin: 0px 0px;
+  }
+  header a .logo {
+    width: 50px;
+    padding: 0px;
+    margin: 0px 15px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  header nav ul li {
+    text-align: center;
+    font-weight: 300;
+  }
+  header nav ul li a {
+    white-space: nowrap;
+  }
+  header nav ul .dis_none {
+    display: none;
+  }
+  /*Página index/HOME ----------*/
+  /*Presentacion*/
+  .home_presentacion {
+    padding: 5% 8%;
+  }
+  .home_presentacion .boton {
+    margin: 5px 0px;
+    font-size: 1.8rem;
+  }
+  /*Nuevo EP*/
+  .home_ep {
+    grid-template-areas: "titulo" "imagen" "subtitulo" "texto1" "texto2" "botones";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 5% 8%;
+  }
+  .home_ep .ep_imagen {
+    padding: 10px 0px 10px 0px;
+  }
+  .home_ep .ep_botones {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .home_ep .ep_botones .ep_boton_sf {
+    margin: 5px 10px 5px 0px;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .home_ep .ep_botones .ep_boton_yt {
+    font-size: 1.7rem;
+    margin: 5px 0px;
+    text-align: center;
+  }
+  /*Fechas*/
+  .home_fechas {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 8%;
+  }
+  .home_fechas .fechas_contenido {
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+    padding: 0%;
+  }
+  .home_fechas .fechas_imagen {
+    width: 100%;
+  }
+  .home_fechas .fechas_imagen .fechas_imagen_detalle {
+    width: 100%;
+    object-fit: contain;
+  }
+  /*Merch*/
+  .home_merch {
+    padding: 5% 8%;
+  }
+  .home_merch .boton {
+    font-size: 1.7rem;
+  }
+  /*Busqueda de nuevos integrantes*/
+  .home_busqueda {
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    padding: 10% 8%;
+  }
+  .home_busqueda .busqueda_contenido {
+    width: 100%;
+    padding-right: 0%;
+  }
+  .home_busqueda .busqueda_boton {
+    width: 100%;
+    padding-top: 2%;
+  }
+  /*Plataformas y redes*/
+  .home_plataformas {
+    padding: 5% 8%;
+  }
+  .home_plataformas .home_plataformas_contenido {
+    padding: 0px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_titulo {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_titulo h2 {
+    text-align: left;
+    width: 100%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_yt {
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+    margin: 0px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_yt .yt_iframe {
+    height: 215px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_sf {
+    width: 100%;
+    height: auto;
+    padding: 4% 0% 0% 0%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 .plataformas_ig {
+    padding-top: 5%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 .plataformas_tk {
+    padding-top: 5%;
+  }
+  /*Página MERCH ------------------------*/
+  /*Grilla de productos*/
+  .titulo_merch {
+    padding: 5% 10% 1% 10%;
+  }
+  .grilla_de_productos {
+    grid-template-columns: 1fr 1fr;
+    padding: 2% 4%;
+  }
+  .grilla_de_productos .card_de_producto {
+    margin: 10px;
+    padding: 15px;
+  }
+  /*Información*/
+  .merch_informacion {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+  }
+  .merch_informacion .informacion {
+    width: 100%;
+  }
+  /*Página Sobre Nosotros ----------------*/
+  /*Grilla de integrantes*/
+  .integrantes_titulo {
+    text-align: center;
+    padding: 5% 10% 0% 10%;
+  }
+  .grilla_de_integrantes {
+    width: 100%;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .grilla_de_integrantes .card_integrante {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_fotos {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    margin: 0px 0px;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_contenido {
+    padding: 0% 0% 6% 0%;
+    flex-direction: column;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_contenido .integrantes_p {
+    font-size: 1.5rem;
+  }
+  /*Historia*/
+  .nosotros_historia .historia_titulo {
+    padding: 7% 10% 0% 10%;
+    text-align: left;
+    margin: 0px;
+  }
+  .nosotros_historia .nosotros_historia_1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nosotros_historia .nosotros_historia_1 .contenido_integrantes_1 {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  .nosotros_historia .nosotros_historia_1 .foto_integrantes_1 {
+    width: 100%;
+  }
+  .nosotros_historia .nosotros_historia_1 .foto_integrantes_1 .foto_integrantes_detalle_1 {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .nosotros_historia .nosotros_historia_2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nosotros_historia .nosotros_historia_2 .contenido_integrantes_2 {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 {
+    width: 100%;
+  }
+  .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 .foto_integrantes_detalle_2 {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .nosotros_newsletter {
+    height: 250px;
+    justify-content: space-evenly;
+    padding: 6% 6%;
+  }
+  .nosotros_newsletter #mail {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  /*Página Contacto -----------------*/
+  /*Formulario de contacto*/
+  .contacto_titulo {
+    padding: 8% 0%;
+  }
+  .contacto_profesional {
+    background-color: rgba(227, 227, 227, 0.7098039216);
+    width: 100%;
+    height: auto;
+    padding: 4% 10%;
+  }
+  .formulario_para_unirse .titulo_form {
+    padding: 8% 0%;
+  }
+  .formulario_para_unirse div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .formulario_para_unirse label {
+    font-size: 1.6rem;
+  }
+  .formulario_para_unirse input {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .formulario_para_unirse textarea {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .formulario_para_unirse input[type=submit] {
+    width: 100%;
+    text-align: center;
+  }
+  .formulario_para_unirse #forms_pares1 {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+    align-content: center;
+  }
+  .formulario_para_unirse #forms_pares2 {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+    align-content: center;
+  }
+}
+/*Adaptado a tablet 721<1000 -------------------------------------*/
+@media (min-width: 721px) and (max-width: 1000px) {
+  /*General*/
+  body h1 {
+    text-align: center;
+    font-size: 3.7rem;
+  }
+  body h2 {
+    font-size: 2.7rem;
+  }
+  body h3 {
+    font-size: 2.3rem;
+  }
+  body p {
+    font-size: 1.9rem;
+  }
+  /*Header*/
+  header {
+    height: 80px;
+    justify-content: center;
+  }
+  header a {
+    margin: 0px 0px;
+  }
+  header a .logo {
+    width: 65px;
+    padding: 0px;
+    margin: 0px 15px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  header nav ul li {
+    text-align: center;
+    font-weight: 400;
+  }
+  header nav ul li a {
+    white-space: nowrap;
+  }
+  /*Página index/HOME ----------*/
+  /*Presentacion*/
+  .home_presentacion {
+    padding: 5% 8%;
+  }
+  .home_presentacion .boton {
+    margin: 5px 0px;
+  }
+  /*Nuevo EP PENDIENTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .home_ep {
+    grid-template-areas: "titulo" "imagen" "subtitulo" "texto1" "texto2" "botones";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 5% 8%;
+  }
+  .home_ep .ep_imagen {
+    padding: 10px 0px 10px 0px;
+  }
+  .home_ep .ep_botones {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .home_ep .ep_botones .ep_boton_sf {
+    margin: 5px 10px 5px 0px;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .home_ep .ep_botones .ep_boton_yt {
+    font-size: 1.7rem;
+    margin: 5px 0px;
+    text-align: center;
+  }
+  /*Fechas*/
+  .home_fechas {
+    height: auto;
+    padding: 5% 10%;
+  }
+  .home_fechas .fechas_contenido {
+    margin-top: 5px;
+    width: 95%;
+    height: 300px;
+    padding: 0%;
+  }
+  .home_fechas .fechas_imagen {
+    width: 100%;
+  }
+  .home_fechas .fechas_imagen .fechas_imagen_detalle {
+    width: 100%;
+    object-fit: contain;
+  }
+  /*Merch*/
+  .home_merch {
+    padding: 5% 10%;
+  }
+  .home_merch .boton {
+    font-size: 1.7rem;
+  }
+  /*Busqueda de nuevos integrantes*/
+  .home_busqueda {
+    background-color: rgba(227, 227, 227, 0.7098039216);
+    width: 100%;
+    height: auto;
+    padding: 4% 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_busqueda .busqueda_contenido {
+    width: 70%;
+    padding-right: 15%;
+  }
+  .home_busqueda .busqueda_contenido .disclaimer {
+    font-size: 1.6rem;
+  }
+  .home_busqueda .busqueda_boton {
+    width: 30%;
+    margin: 0px;
+    text-align: center;
+  }
+  /*Plataformas y redes*/
+  .home_plataformas {
+    padding: 5% 8%;
+  }
+  .home_plataformas .home_plataformas_contenido {
+    padding: 0px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_titulo {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_titulo h2 {
+    text-align: left;
+    width: 100%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_yt {
+    width: 100%;
+    height: auto;
+    padding-top: 4%;
+    margin: 0px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_yt .yt_iframe {
+    height: 300px;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_sf {
+    width: 100%;
+    height: auto;
+    padding: 4% 0% 0% 0%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 .plataformas_ig {
+    padding-top: 5%;
+  }
+  .home_plataformas .home_plataformas_contenido .plataformas_3 .plataformas_2 .plataformas_tk {
+    padding-top: 5%;
+  }
+  /*Página MERCH ------------------------*/
+  /*Grilla de productos*/
+  .titulo_merch {
+    padding: 5% 10% 1% 10%;
+  }
+  .grilla_de_productos {
+    grid-template-columns: 1fr 1fr;
+    padding: 2% 4%;
+  }
+  .grilla_de_productos .card_de_producto {
+    margin: 10px;
+    padding: 15px;
+  }
+  /*Información*/
+  .merch_informacion {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+  }
+  .merch_informacion .informacion {
+    width: 100%;
+  }
+  /*Página Sobre Nosotros ----------------*/
+  /*Grilla de integrantes*/
+  .integrantes_titulo {
+    text-align: center;
+    padding: 5% 10% 0% 10%;
+  }
+  .grilla_de_integrantes {
+    width: 100%;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .grilla_de_integrantes .card_integrante {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_fotos {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    margin: 0px 0px;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_contenido {
+    padding: 0% 0% 6% 0%;
+    flex-direction: column;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_contenido .integrantes_p {
+    font-size: 1.9rem;
+  }
+  /*Historia*/
+  .nosotros_historia .historia_titulo {
+    padding: 7% 10% 0% 10%;
+    text-align: left;
+    margin: 0px;
+  }
+  .nosotros_historia .nosotros_historia_1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nosotros_historia .nosotros_historia_1 .contenido_integrantes_1 {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  .nosotros_historia .nosotros_historia_1 .foto_integrantes_1 {
+    width: 100%;
+  }
+  .nosotros_historia .nosotros_historia_1 .foto_integrantes_1 .foto_integrantes_detalle_1 {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .nosotros_historia .nosotros_historia_2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nosotros_historia .nosotros_historia_2 .contenido_integrantes_2 {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 {
+    width: 100%;
+  }
+  .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 .foto_integrantes_detalle_2 {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .nosotros_newsletter {
+    height: 350px;
+    justify-content: space-evenly;
+    padding: 6% 6%;
+  }
+  .nosotros_newsletter #mail {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  /*Página Contacto -----------------*/
+  /*Formulario de contacto*/
+  .contacto_titulo {
+    padding: 8% 0%;
+  }
+  .contacto_profesional {
+    background-color: rgba(227, 227, 227, 0.7098039216);
+    width: 100%;
+    height: auto;
+    padding: 4% 10%;
+  }
+  .formulario_para_unirse .titulo_form {
+    padding: 8% 0%;
+  }
+  .formulario_para_unirse div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .formulario_para_unirse label {
+    font-size: 1.9rem;
+  }
+  .formulario_para_unirse input {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .formulario_para_unirse textarea {
+    width: 100%;
+    font-size: 1.8rem;
   }
   .formulario_para_unirse input[type=submit] {
     width: 100%;

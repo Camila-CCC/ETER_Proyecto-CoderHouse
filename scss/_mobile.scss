@@ -1,7 +1,7 @@
 @use "primarios" as*;
 @use "mixing" as*;
 
-
+/*Adaptado a mobile <480 --------------------------*/
 
 @media (max-width: 480px) {
 
@@ -124,11 +124,11 @@
             .ep_boton_sf {
                 margin: 5px 0px;
                 text-align: center;
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
 
             .ep_boton_yt {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
                 margin: 5px 0px;
                 text-align: center;
 
@@ -160,9 +160,6 @@
             }
         }
     }
-
-
-
 
 
 
