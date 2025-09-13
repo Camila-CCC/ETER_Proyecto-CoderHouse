@@ -3,7 +3,7 @@
 
 /*Adaptado a tablet 481<720 ---------------------------------------*/
 
-@media (min-width: 481px) and (max-width: 720px) {
+@media (min-width: 481px) and (max-width: 790px) {
 
     /*General*/
     body {
@@ -192,6 +192,7 @@
             .plataformas_titulo {
                 flex-direction: column;
                 justify-content: flex-start;
+                align-items: flex-start;
 
                 h2 {
                     text-align: left;
@@ -240,7 +241,6 @@
 
     .titulo_merch {
         padding: 5% 10% 1% 10%;
-
     }
 
     .grilla_de_productos {
@@ -273,8 +273,6 @@
     .integrantes_titulo {
         text-align: center;
         padding: 5% 10% 0% 10%;
-
-
     }
 
     .grilla_de_integrantes {
@@ -432,7 +430,7 @@
 
 /*Adaptado a tablet 721<1000 -------------------------------------*/
 
-@media (min-width: 721px) and (max-width: 1000px) {
+@media (min-width: 791px) and (max-width: 1000px) {
 
     /*General*/
     body {
@@ -636,7 +634,7 @@
                 margin: 0px;
 
                 .yt_iframe {
-                    height: 300px;
+                    height: 400px;
                 }
             }
 
@@ -671,7 +669,6 @@
 
     .titulo_merch {
         padding: 5% 10% 1% 10%;
-
     }
 
     .grilla_de_productos {
@@ -681,20 +678,6 @@
         .card_de_producto {
             margin: 10px;
             padding: 15px;
-        }
-    }
-
-
-    /*Información*/
-
-    .merch_informacion {
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 150px;
-
-        .informacion {
-            width: 100%;
         }
     }
 
@@ -720,7 +703,7 @@
             margin-top: 20px;
 
             .integrantes_fotos {
-                @include section_wh (100%, 600px);
+                @include section_wh (100%, 500px);
                 object-fit: cover;
                 object-position: 50% 20%;
                 margin: 0px 0px;
@@ -760,7 +743,7 @@
 
                 .foto_integrantes_detalle_1 {
                     width: 100%;
-                    border-radius: 4px;
+                    border-radius: 9px;
                 }
             }
         }
@@ -779,7 +762,7 @@
 
                 .foto_integrantes_detalle_2 {
                     width: 100%;
-                    border-radius: 4px;
+                    border-radius: 9px;
                 }
             }
         }
@@ -855,7 +838,5 @@
             justify-items: start;
             align-content: center;
         }
-
     }
-
 }

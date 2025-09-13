@@ -946,7 +946,7 @@ footer .iconos_redes {
   }
 }
 /*Adaptado a tablet 481<720 ---------------------------------------*/
-@media (min-width: 481px) and (max-width: 720px) {
+@media (min-width: 481px) and (max-width: 790px) {
   /*General*/
   body h1 {
     text-align: center;
@@ -1097,6 +1097,7 @@ footer .iconos_redes {
   .home_plataformas .home_plataformas_contenido .plataformas_titulo {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
   }
   .home_plataformas .home_plataformas_contenido .plataformas_titulo h2 {
     text-align: left;
@@ -1290,7 +1291,7 @@ footer .iconos_redes {
   }
 }
 /*Adaptado a tablet 721<1000 -------------------------------------*/
-@media (min-width: 721px) and (max-width: 1000px) {
+@media (min-width: 791px) and (max-width: 1000px) {
   /*General*/
   body h1 {
     text-align: center;
@@ -1461,7 +1462,7 @@ footer .iconos_redes {
     margin: 0px;
   }
   .home_plataformas .home_plataformas_contenido .plataformas_yt .yt_iframe {
-    height: 300px;
+    height: 400px;
   }
   .home_plataformas .home_plataformas_contenido .plataformas_3 {
     width: 100%;
@@ -1497,16 +1498,6 @@ footer .iconos_redes {
     margin: 10px;
     padding: 15px;
   }
-  /*Información*/
-  .merch_informacion {
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-  }
-  .merch_informacion .informacion {
-    width: 100%;
-  }
   /*Página Sobre Nosotros ----------------*/
   /*Grilla de integrantes*/
   .integrantes_titulo {
@@ -1526,7 +1517,7 @@ footer .iconos_redes {
   }
   .grilla_de_integrantes .card_integrante .integrantes_fotos {
     width: 100%;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
     object-position: 50% 20%;
     margin: 0px 0px;
@@ -1561,7 +1552,7 @@ footer .iconos_redes {
   }
   .nosotros_historia .nosotros_historia_1 .foto_integrantes_1 .foto_integrantes_detalle_1 {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 9px;
   }
   .nosotros_historia .nosotros_historia_2 {
     width: 100%;
@@ -1580,7 +1571,7 @@ footer .iconos_redes {
   }
   .nosotros_historia .nosotros_historia_2 .foto_integrantes_2 .foto_integrantes_detalle_2 {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 9px;
   }
   .nosotros_newsletter {
     height: 350px;
