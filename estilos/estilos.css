@@ -535,6 +535,7 @@ footer .iconos_redes {
   width: 40%;
   height: auto;
   margin: 2% 10% 2% 10%;
+  border: 1px #1F1F1F solid;
 }
 
 /* Página de Contacto --------------------------------------------------------------------*/
@@ -887,7 +888,7 @@ footer .iconos_redes {
     border-radius: 4px;
   }
   .nosotros_newsletter {
-    height: 250px;
+    height: auto;
     justify-content: space-evenly;
     padding: 6% 6%;
   }
@@ -1232,13 +1233,14 @@ footer .iconos_redes {
     border-radius: 4px;
   }
   .nosotros_newsletter {
-    height: 250px;
+    height: auto;
     justify-content: space-evenly;
     padding: 6% 6%;
   }
   .nosotros_newsletter #mail {
     width: 80%;
-    margin-bottom: 20px;
+    margin: 20px 2px 20px 2px;
+    border: 1px #1F1F1F solid;
   }
   /*Página Contacto -----------------*/
   /*Formulario de contacto*/
@@ -1508,26 +1510,26 @@ footer .iconos_redes {
     width: 100%;
     grid-template-columns: 1fr;
     height: auto;
+    justify-content: center;
   }
   .grilla_de_integrantes .card_integrante {
     width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
   }
   .grilla_de_integrantes .card_integrante .integrantes_fotos {
-    width: 100%;
-    height: 500px;
     object-fit: cover;
-    object-position: 50% 20%;
-    margin: 0px 0px;
   }
   .grilla_de_integrantes .card_integrante .integrantes_contenido {
-    padding: 0% 0% 6% 0%;
     flex-direction: column;
+    margin-left: 4%;
   }
   .grilla_de_integrantes .card_integrante .integrantes_contenido .integrantes_p {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   /*Historia*/
   .nosotros_historia .historia_titulo {
@@ -1574,13 +1576,14 @@ footer .iconos_redes {
     border-radius: 9px;
   }
   .nosotros_newsletter {
-    height: 350px;
+    height: auto;
     justify-content: space-evenly;
     padding: 6% 6%;
   }
   .nosotros_newsletter #mail {
     width: 80%;
-    margin-bottom: 20px;
+    margin: 20px 2px 25px 2px;
+    border: 1px #1F1F1F solid;
   }
   /*Página Contacto -----------------*/
   /*Formulario de contacto*/
@@ -1630,6 +1633,35 @@ footer .iconos_redes {
     align-items: center;
     justify-items: start;
     align-content: center;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1160px) {
+  /*Página Sobre Nosotros ----------------*/
+  /*Grilla de integrantes*/
+  .grilla_de_integrantes {
+    width: 100%;
+    grid-template-columns: 1fr;
+    height: auto;
+    justify-content: center;
+  }
+  .grilla_de_integrantes .card_integrante {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_fotos {
+    object-fit: cover;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_contenido {
+    flex-direction: column;
+    margin-left: 4%;
+  }
+  .grilla_de_integrantes .card_integrante .integrantes_contenido .integrantes_p {
+    font-size: 2rem;
   }
 }
 

@@ -353,13 +353,14 @@
     }
 
     .nosotros_newsletter {
-        height: 250px;
+        height: auto;
         justify-content: space-evenly;
         padding: 6% 6%;
 
         #mail {
             width: 80%;
-            margin-bottom: 20px;
+            margin: 20px 2px 20px 2px;
+            border: 1px $oscuro solid;
         }
     }
 
@@ -422,9 +423,7 @@
             justify-items: start;
             align-content: center;
         }
-
     }
-
 }
 
 
@@ -451,7 +450,6 @@
         p {
             font-size: 1.9rem;
         }
-
     }
 
     /*Header*/
@@ -687,34 +685,30 @@
     .integrantes_titulo {
         text-align: center;
         padding: 5% 10% 0% 10%;
-
-
     }
 
     .grilla_de_integrantes {
         width: 100%;
         grid-template-columns: 1fr;
         height: auto;
+        justify-content: center;
 
         .card_integrante {
             width: 100%;
-            display: flex;
-            flex-direction: column;
+            height: auto;
+            @include flex (row, center, center);
             margin-top: 20px;
 
             .integrantes_fotos {
-                @include section_wh (100%, 500px);
                 object-fit: cover;
-                object-position: 50% 20%;
-                margin: 0px 0px;
             }
 
             .integrantes_contenido {
-                padding: 0% 0% 6% 0%;
                 flex-direction: column;
+                margin-left: 4%;
 
                 .integrantes_p {
-                    font-size: 1.9rem;
+                    font-size: 2rem;
                 }
             }
         }
@@ -769,13 +763,14 @@
     }
 
     .nosotros_newsletter {
-        height: 350px;
+        height: auto;
         justify-content: space-evenly;
         padding: 6% 6%;
 
         #mail {
             width: 80%;
-            margin-bottom: 20px;
+            margin: 20px 2px 25px 2px;
+            border: 1px $oscuro solid;
         }
     }
 
@@ -837,6 +832,38 @@
             align-items: center;
             justify-items: start;
             align-content: center;
+        }
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1160px) {
+    /*Página Sobre Nosotros ----------------*/
+    /*Grilla de integrantes*/
+
+    .grilla_de_integrantes {
+        width: 100%;
+        grid-template-columns: 1fr;
+        height: auto;
+        justify-content: center;
+
+        .card_integrante {
+            width: 100%;
+            height: auto;
+            @include flex (row, center, center);
+            margin-top: 20px;
+
+            .integrantes_fotos {
+                object-fit: cover;
+            }
+
+            .integrantes_contenido {
+                flex-direction: column;
+                margin-left: 4%;
+
+                .integrantes_p {
+                    font-size: 2rem;
+                }
+            }
         }
     }
 }

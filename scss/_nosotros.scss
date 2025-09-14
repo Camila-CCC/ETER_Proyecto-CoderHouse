@@ -69,9 +69,10 @@
 
 .nosotros_historia {
     @include section($gris, 100%, auto);
-background: #E3E3E3B5;
-/*Gradiente*/
-background: linear-gradient(180deg, rgba(227, 227, 227, 1) 0%, rgba(251, 251, 251, 1) 78%);    padding: 2% 10% 4% 10%;
+    background: #E3E3E3B5;
+    /*Gradiente*/
+    background: linear-gradient(180deg, rgba(227, 227, 227, 1) 0%, rgba(251, 251, 251, 1) 78%);
+    padding: 2% 10% 4% 10%;
 
     .historia_titulo {
         padding: 4% 0%;
@@ -115,10 +116,7 @@ background: linear-gradient(180deg, rgba(227, 227, 227, 1) 0%, rgba(251, 251, 25
                 @extend .foto_integrantes_detalle_1;
             }
         }
-
     }
-
-
 }
 
 /*Newsletter*/
@@ -132,5 +130,6 @@ background: linear-gradient(180deg, rgba(227, 227, 227, 1) 0%, rgba(251, 251, 25
     #mail {
         @include section_wh (40%, auto);
         margin: 2% 10% 2% 10%;
+        border: 1px $oscuro solid;
     }
 }
