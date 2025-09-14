@@ -2,7 +2,7 @@
 
 Proyecto hecho para el curso de Desarrollo de **Coderhouse**.  
 Sitio web de mi banda llamada **ETER**.
-Está creada con **HTML, CSS y Bootstrap**.
+Está creada con **HTML, SCSS, Bootstrap y AOS**.
 
 ## Secciones:
 - Inicio
