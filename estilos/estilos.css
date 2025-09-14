@@ -535,7 +535,11 @@ footer .iconos_redes {
   width: 40%;
   height: auto;
   margin: 2% 10% 2% 10%;
-  border: 1px #1F1F1F solid;
+  padding: 5px;
+  border: 1px solid #1F1F1F;
+  border-radius: 6px;
+  background: #FBFBFB;
+  color: #1F1F1F;
 }
 
 /* Página de Contacto --------------------------------------------------------------------*/
@@ -895,6 +899,11 @@ footer .iconos_redes {
   .nosotros_newsletter #mail {
     width: 80%;
     margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #1F1F1F;
+    border-radius: 6px;
+    background: #FBFBFB;
+    color: #1F1F1F;
   }
   /*Página Contacto -----------------*/
   /*Formulario de contacto*/
@@ -1240,7 +1249,11 @@ footer .iconos_redes {
   .nosotros_newsletter #mail {
     width: 80%;
     margin: 20px 2px 20px 2px;
-    border: 1px #1F1F1F solid;
+    padding: 5px;
+    border: 1px solid #1F1F1F;
+    border-radius: 6px;
+    background: #FBFBFB;
+    color: #1F1F1F;
   }
   /*Página Contacto -----------------*/
   /*Formulario de contacto*/
@@ -1583,7 +1596,11 @@ footer .iconos_redes {
   .nosotros_newsletter #mail {
     width: 80%;
     margin: 20px 2px 25px 2px;
-    border: 1px #1F1F1F solid;
+    padding: 5px;
+    border: 1px solid #1F1F1F;
+    border-radius: 6px;
+    background: #FBFBFB;
+    color: #1F1F1F;
   }
   /*Página Contacto -----------------*/
   /*Formulario de contacto*/

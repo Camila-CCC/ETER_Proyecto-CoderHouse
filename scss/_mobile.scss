@@ -367,6 +367,11 @@
         #mail {
             width: 80%;
             margin-bottom: 20px;
+            padding: 5px;
+            border: 1px solid $oscuro;
+            border-radius: 6px;
+            background: $claro;
+            color: $oscuro;
         }
     }
 

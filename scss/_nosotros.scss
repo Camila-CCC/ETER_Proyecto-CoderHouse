@@ -130,6 +130,10 @@
     #mail {
         @include section_wh (40%, auto);
         margin: 2% 10% 2% 10%;
-        border: 1px $oscuro solid;
+        padding: 5px;
+        border: 1px solid $oscuro;
+        border-radius: 6px;
+        background: $claro;
+        color: $oscuro;
     }
 }

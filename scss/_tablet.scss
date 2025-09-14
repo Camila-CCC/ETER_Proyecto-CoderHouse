@@ -360,7 +360,11 @@
         #mail {
             width: 80%;
             margin: 20px 2px 20px 2px;
-            border: 1px $oscuro solid;
+            padding: 5px;
+            border: 1px solid $oscuro;
+            border-radius: 6px;
+            background: $claro;
+            color: $oscuro;
         }
     }
 
@@ -770,7 +774,11 @@
         #mail {
             width: 80%;
             margin: 20px 2px 25px 2px;
-            border: 1px $oscuro solid;
+            padding: 5px;
+            border: 1px solid $oscuro;
+            border-radius: 6px;
+            background: $claro;
+            color: $oscuro;
         }
     }
 
